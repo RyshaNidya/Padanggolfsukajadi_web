@@ -8,6 +8,8 @@
     <!-- TAILWIND -->
     <!-- <script src="./tailwind-config.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="src/input.css">
+
     
     <!-- <link href="/src/output.css" rel="stylesheet"> -->
 
@@ -17,17 +19,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha384-..." crossorigin="anonymous"
 />
-    <link rel="stylesheet" href="src/input.css">
-    <!-- IMPORT CONFIG -->
-    <script>
-        tailwind.config = {
-        theme: {
-            screens: {
-            'xs': '375px',
-            }
-        }
-        }
-    </script>
+
 </head>
 <body>
     <!-- ! HEADER & NAVBAR -->
@@ -36,7 +28,7 @@
         <nav class="p-4 fixed  w-full z-50">
             
             <!-- ! NAVBAR -->
-            <div  class="bg-slate-900 h-12 m-auto   rounded-full flex items-center justify-between  ">
+            <div  class="bg-slate-900 h-12 m-auto rounded-full flex items-center justify-between  ">
                 <img src="assets/img/logo_pgs.png" alt="Logo Padang Golf Sukajasi" class="w-12
                 bg-slate-900 h-12 ml-5">
                 <span class="text-white font-bold m-5 text-sm bg">PadangGolfSukajadi</span>
@@ -58,7 +50,7 @@
                     <span class="text-slate-900 font-bold">Book Now</span>
                 </a>
                 <a href="https://www.figma.com/design/zp0IYvVEDsC1eUzJ42hePA/UI-UX-Padang-Golf-Sukajadi?node-id=164-795&t=FepQzvY4m9NbV9vI-0" target="_blank" class="bg-white py-3 px-2  rounded-full">
-                    <span class=" fa-whatsapp fa-brands text-2xl  text-slate-900"></span>
+                    <span class=" fa-whatsapp fa-brands text-2xl  text-slate-900 "></span>
                 </a>
             </div>
         </div>
@@ -71,32 +63,40 @@
         </p>
 
         <!-- ! GAMBAR -->
-        <div class="flex justify-evenly gap-5 flex-wrap ">
-            <img src="assets/img/radisson1.jpg" alt="" class="gambar-home shadow-lg">
+        <div class="flex justify-evenly gap-5 flex-wrap  ">
+            <img src="assets/img/radisson1.jpg" alt="" class="gambar-home shadow-lg ">
             <img src="assets/img/padanggolf1.jpg" alt="" class="gambar-home shadow-lg">
             <img src="assets/img/pgs-image-1.jpg" alt="" class="gambar-home shadow-lg">
-            <img src="assets/img/pgs-image-1.jpg" alt="" class="gambar-home shadow-lg">
+            <img src="assets/img/pgs-image-1.jpg" alt="" class="gambar-home shadow-lg ">
         </div>
     </div>
 
     <!-- !GOLF -->
 
     <div class="p-5">
-        <span class="text-xl font-bold text-center block">GOLF</span>
+        <span class="text-2xl font-bold text-center block">GOLF</span>
 
-        <div class="border">
-            <!-- hole -->
-            <div>
-                    <img src="assets/img/hole1.png" alt="Hole Golf 1" class="w-1/6">
-                <div class="mt-10 ">
-                    <span class="fa-solid fa-arrow-left border p-2"></span>
-                    <span class="fa-solid fa-arrow-right p-2 "></span>
-                </div>
-            </div>
-            <!-- keterangan hole -->
-            <div>
+        <div class=" flex mt-3 items-stretch gap-1 ">
 
+            <!--? hole -->
+            <div class=" w-1/4   ">
+                <img src="assets/img/hole1.png" alt="Hole Golf 1" class=" w-16">
+                
             </div>
+
+            <!--? keterangan hole -->
+            <div  class=" h-full flex-1">
+                <p class="text-xl font-semibold">Hole 1</p>
+                <p class="text-sm my-7 text-justify"><span class="ml-5"></span>Is a par 4 with a distance of 301–376 meters and a difficulty index of 14, featuring lateral water hazards on both sides and a large tree in front of the tee box that requires golfers to make a precise opening shot.</p>
+                <a href="https://www.youtube.com/">
+                    <button class="bg-[#007429] py-2 px-4 rounded-lg text-white font-semibold">Book Here</button>
+                </a>
+            </div>
+        </div>
+        <div class=" mt-2 text-center">
+            <button class=" text-[#007429] border-2 py-1 px-2 rounded-full"><span class="fa-arrow-left fa-solid text-sm"></span></button>
+            <button class=" bg-[#007429] border-2  py-1 px-2 text-white rounded-full"><span class="fa-arrow-right fa-solid text-sm"></span></button>
+            
         </div>
     </div>
 

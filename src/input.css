@@ -1,6 +1,22 @@
+@import "tailwindcss";
+
+/* color
+    green : #007429
+*/
+
 .gambar-home {
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
+    width: 155px;
+    height: 150px;
     border-radius: 15px;
+    object-fit: cover;
+
+
+}
+
+@media (max-width: 370px){
+    .gambar-home {
+        width: 250px;
+        height: 200px;
+        object-fit: cover;
+    }
 }
