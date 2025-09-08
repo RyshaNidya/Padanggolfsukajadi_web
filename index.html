@@ -7,7 +7,10 @@
 
     <!-- TAILWIND -->
     <!-- <script src="./tailwind-config.js"></script> -->
+    <!--? V4 -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--? V3 -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="src/input.css">
 
     
@@ -21,11 +24,11 @@
 />
 
 </head>
-<body>
+<body class="w-screen">
     <!-- ! HEADER & NAVBAR -->
-    <div class="h-screen overflow-x-hidden bg-center bg-cover relative" style="background-image: url('../assets/img/bg-header.jpg');" >
+    <div class="h-screen  overflow-x-hidden bg-center bg-cover relative" style="background-image: url('../assets/img/bg-header.jpg');" >
 
-        <nav class="p-4 fixed  w-full z-50">
+        <nav class="p-4 fixed w-screen z-50">
             
             <!-- ! NAVBAR -->
             <div  class="bg-slate-900 h-12 m-auto rounded-full flex items-center justify-between  ">
@@ -39,7 +42,7 @@
         <!--! Welcome text -->
 
         <div class=" p-5 mb-2 text-white  absolute bottom-0 m-auto w-screen">
-            <h1 class=" font-bold text-3xl sm:text-4xl">Welcome to Padang Golf Sukajadi</h1>
+            <h1 class=" font-bold text-3xl sm:text-4xl xs:text-2xl">Welcome to Padang Golf Sukajadi</h1>
             <p class="mt-3 text-justify">
                 At Padang Golf Sukajadi, we offer more than just a game, we provide an extraordinary golfing experience. Designed for golfers of all skill levels, our championship-level course is set amidst breathtaking landscapes, offering the perfect balance of challenge and relaxation.
             </p>
@@ -100,28 +103,134 @@
         </div>
     </div>
 
+    <!-- !HOTEL -->
+    <div class="p-5">
+        <span class="text-2xl font-bold text-center block my-3">HOTEL</span>
+        <span class="font-semibold block my-3">Radisson Golf & Convention Center Batam</span>
+        
+        <!-- text picture hotel -->
+        <div class="">
+            
+                <p class="text-sm text-justify ">
+                    Radisson Golf & Convention Center Batam is a modern upscale hotel with 240 rooms, a grand ballroom, eight meeting rooms, dining and leisure facilities, located right next to Padang Golf Sukajadi.
+                </p>
+            
+            
+                <img src="assets/img/hotel1.png" alt="Hotel Padang Golf Sukajadi" class="my-4 w-[80%] mx-auto rounded-xl shadow-lg object-cover">
+                
+                <div class=" mt-2 text-center">
+                    <button class=" text-[#007429] border-2 py-1 px-2 rounded-full"><span class="fa-arrow-left fa-solid text-sm"></span></button>
+                    <button class=" bg-[#007429] border-2  py-1 px-2 text-white rounded-full"><span class="fa-arrow-right fa-solid text-sm"></span></button>
+                    
+                </div>
+        </div>
+
+    </div>
+
+    <!-- !FACILITIES -->
+    <div class="">
+        <span class="text-2xl font-bold text-center block mt-5">FACILITIES</span>
+
+        <!-- Driving Range -->
+        <div class="flex mt-5 mb-10  items-center">
+
+            <div class="relative p-2 w-2/5 ">
+                <div class="absolute px-5 py-3 border-8 border-white  bg-[#007429] flex justify-center items-center text-2xl rounded-full left-3 top-0 text-white font-bold">1</div>
+                <img src="assets/img/faci_pic.png" alt="Driving Range" class="object-cover w-full h-auto">
+            </div>
+            <div class="pr-5  flex-1">
+                <span class="font-semibold block text-xl">Driving Range</span>
+                <p class=" text-justify mt-4 ">The driving range features 24 bays and is located in the heart of Batam City, open daily from 07:00 to 22:00.</p>
+            </div>
+        </div>
+
+        <!--    RESTAURANT -->
+        <div class="flex  mt-5 mb-10   items-center">
+
+            
+            <div class="px-5  flex-1">
+                <span class="font-semibold block text-xl">Restaurant</span>
+                <p class=" text-justify mt-4 ">Serving a wide selection of delicious meals, this venue welcomes both golfers and non-golfers for breakfast, lunch, or dinner, open daily from 06:00 to 20:00.</p>
+            </div>
+            <div class="relative pr-5 w-2/5 ">
+                <div class="absolute px-5 py-3 border-8 border-white  bg-[#007429] flex justify-center items-center text-2xl rounded-full left-0 top-0 text-white font-bold">2</div>
+                <img src="assets/img/faci_retaurant.png" alt="Driving Range" class="object-cover w-full h-auto">
+            </div>
+        </div>
+
+        <!-- PROSHOP -->
+        <div class="flex mt-5 mb-10  items-center">
+
+            <div class="relative p-2 w-2/5 ">
+                <div class="absolute px-5 py-3 border-8 border-white  bg-[#007429] flex justify-center items-center text-2xl rounded-full left-0 top-0 text-white font-bold">3</div>
+                <img src="assets/img/faci_proshop.png" alt="Driving Range" class="object-cover w-full h-auto">
+            </div>
+            <div class="pr-5  flex-1">
+                <span class="font-semibold block text-xl">Pro Shop</span>
+                <p class=" text-justify mt-4 ">The Padang Golf Sukajadi Pro Shop provides a wide selection of golf apparel and equipment, open daily from 06:00 to 20:00.</p>
+            </div>
+        </div>
+
+        <!-- MASSAGE -->
+        <div class="flex  mt-5 mb-10   items-center">
+
+            
+            <div class="px-5  flex-1">
+                <span class="font-semibold block text-xl">Massage</span>
+                <p class=" text-justify mt-4 ">After a round of golf, unwind with a full sensory experience through traditional massage at our retreat, open daily from 09:00 to 18:00</p>
+            </div>
+            <div class="relative pr-5 w-2/5 ">
+                <div class="absolute px-5 py-3 border-8 border-white  bg-[#007429] flex justify-center items-center text-2xl rounded-full left-0 top-0 text-white font-bold">4</div>
+                <img src="assets/img/faci_mass.png" alt="Driving Range" class="object-cover w-full h-auto">
+            </div>
+        </div>
+
+        <!-- Locker -->
+        <div class="flex mt-5 mb-10  items-center">
+
+            <div class="relative p-2 w-2/5 ">
+                <div class="absolute px-5 py-3 border-8 border-white  bg-[#007429] flex justify-center items-center text-2xl rounded-full left-0 top-0 text-white font-bold">5</div>
+                <img src="assets/img/faci_proshop.png" alt="Driving Range" class="object-cover w-full h-auto">
+            </div>
+            <div class="pr-5  flex-1">
+                <span class="font-semibold block text-xl">VVIP Locker Room</span>
+                <p class=" text-justify mt-4 ">The Padang Golf Sukajadi Pro Shop provides a wide selection of golf apparel and equipment, open daily from 06:00 to 20:00.</p>
+            </div>
+        </div>
+
+        <!-- MASSAGE -->
+        <div class="flex  mt-5 mb-10   items-center">
+
+            
+            <div class="px-5  flex-1">
+                <span class="font-semibold block text-xl">Massage</span>
+                <p class=" text-justify mt-4 ">After a round of golf, unwind with a full sensory experience through traditional massage at our retreat, open daily from 09:00 to 18:00</p>
+            </div>
+            <div class="relative pr-5 w-2/5 ">
+                <div class="absolute px-5 py-3 border-8 border-white  bg-[#007429] flex justify-center items-center text-2xl rounded-full left-0 top-0 text-white font-bold">6</div>
+                <img src="assets/img/faci_mass.png" alt="Driving Range" class="object-cover w-full h-auto">
+            </div>
+        </div>
+    </div>
+
     
     
     <!-- !FOOTER -->
-     <!-- cntact -->
-        <div class="relative w-full bg-white border">
+    <!-- cntact -->
+        <div class="relative  w-screen bg-white border">
+
+            <div class="">
+                <button>email</button>
+                <button>phone</button>
+                <button>phone</button>
+            </div>
     <!-- Gambar golf (background kanan bawah) -->
             <img src="assets/img/golf.png" 
                 alt="golf"
-                class="absolute bottom-0 right-0 max-w-[40%] h-auto object-contain z-0">
+                class="absolute bottom-0 right-0 max-w-[50%] h-auto object-contain z-0">
 
             <!-- Konten utama (form) -->
-            <div class="relative z-10 p-8 max-w-lg border">
-                <h2 class="text-2xl font-bold text-green-900 mb-6">Contact Us</h2>
-                <form class="space-y-4">
-                <div class="flex gap-4">
-                    <input type="text" placeholder="Name" class="flex-1 border-b border-green-700 p-2 outline-none">
-                    <input type="email" placeholder="Email" class="flex-1 border-b border-green-700 p-2 outline-none">
-                </div>
-                <textarea placeholder="Message" class="w-full border-b border-green-700 p-2 outline-none"></textarea>
-                <button class="bg-green-700 text-white py-2 px-6 rounded-lg font-semibold">Send</button>
-                </form>
-            </div>
+            
 
             <!-- Gambar rumput (menimpa golf di bawah) -->
             <img src="assets/img/rumput.png"
@@ -132,12 +241,28 @@
     
 
     <!-- copyright -->
-    <div class="flex flex-col items-center text-xs bg-[#007429] p-3 text-white">
+    <div class="flex flex-col  items-center text-xs bg-[#007429] p-3 text-white ">
     <p>Copyright &copy; 2025 Padang Golf Sukajadi</p>
     <p>All Rights Reserved</p>
 
 
     </div>
     
+
+
+    <script>
+  // Simpan posisi scroll sebelum reload
+    window.addEventListener("beforeunload", () => {
+        localStorage.setItem("scrollPos", window.scrollY);
+    });
+
+    // Balikin posisi scroll setelah reload
+    window.addEventListener("load", () => {
+        const scrollPos = localStorage.getItem("scrollPos");
+        if (scrollPos) {
+        window.scrollTo(0, parseInt(scrollPos));
+        }
+    });
+    </script>
 </body>
 </html>
