@@ -1,19 +1,26 @@
 {
   "name": "padanggolfsukajadi-web",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "description": "Website Padang Golf Sukajadi",
+  "main": "tailwind.config.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
-  "devDependencies": {
-    "vite": "^7.1.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyshaNidya/Padanggolfsukajadi_web.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RyshaNidya/Padanggolfsukajadi_web/issues"
+  },
+  "homepage": "https://github.com/RyshaNidya/Padanggolfsukajadi_web#readme",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.12",
-    "@tailwindcss/vite": "^4.1.12",
-    "tailwindcss": "^4.1.12"
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
   }
 }
