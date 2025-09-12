@@ -81,7 +81,7 @@ _This project is a static website, so it doesn`t any external API keys or servic
 
 ## Contact
 
-Yurisha Anindya - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Yurisha Anindya - [@your_twitter](https://twitter.com/your_username) - yurishaanindya154@gmail.com
 Muhammad Farrel Ardanto - [@farrelardanto](https://twitter.com/your_username) - farrelardanto135@gmail.com
 
 Project Link: [https://github.com/RyshaNidya/Padanggolfsukajadi_web](https://github.com/RyshaNidya/Padanggolfsukajadi_web.git)
