@@ -74,7 +74,7 @@ _This project is a static website, so it doesn`t any external API keys or servic
 5. (Optional) If you want to recompile TailwindCSS, make sure Node.js is installed, then run:
    ```sh
    npm install
-   npm run build
+   npm run dev
    ```
 
 <!-- CONTACT -->
