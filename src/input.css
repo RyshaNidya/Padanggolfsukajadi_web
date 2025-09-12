@@ -6,7 +6,11 @@
 
 @theme {
     ----breakpoint-xs : 20rem;
-    ----color-green : #007429;
+    
+}
+
+:root {
+    ----color-hijau : #007429;
 }
 
 .gambar-home {

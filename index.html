@@ -6,7 +6,7 @@
     <title>HOME | Padang Golf Sukajadi</title>
 
     <!-- TAILWIND -->
-    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="./src/output.css">
     <!--? V4 -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <!--? V3 -->
@@ -33,13 +33,13 @@
                 <img src="assets/img/logo_pgs.png" alt="Logo Padang Golf Sukajasi" class="w-12 sm:w-20 rounded-2xl
                 bg-slate-900 h-auto ml-5">
                 <span class="text-white font-bold m-5 text-sm sm:text-2xl">PadangGolfSukajadi</span>
-                <i class="fa-bars fa-solid text-white mr-5 text-xl sm:text-4xl"></i>
+                <i class="fa-bars fa-solid text-white mr-5 text-xl sm:text-3xl"></i>
             </div>
         </nav>
 
         <!--! Welcome text -->
 
-        <div class=" p-5 mb-2 text-white  absolute bottom-0 m-auto w-screen">
+        <div class=" px-5 mb-2 text-white  absolute bottom-0 m-auto w-screen">
             <h1 class=" font-bold text-3xl sm:text-6xl xs:text-xl">Welcome to Padang Golf Sukajadi</h1>
             <p class="mt-3 text-justify sm:text-3xl">
                 At Padang Golf Sukajadi, we offer more than just a game, we provide an extraordinary golfing experience. Designed for golfers of all skill levels, our championship-level course is set amidst breathtaking landscapes, offering the perfect balance of challenge and relaxation.
@@ -224,80 +224,100 @@
         class="w-screen h-96 my-5"></iframe>
     </div>
 
-    <!-- ! CONTACT -->
+    <!-- ! FIND US HERE -->
     <span class="text-2xl font-bold text-center block mt-8">FIND US HERE</span>
-    <div class="grid grid-cols-[auto_1fr]  items-center">
+
+    
+    <div class="flex flex-col">
+        
         <!-- instagram -->
-        <div class="py-3 ml-5">
-            <a href="https://www.instagram.com/padanggolfsukajadi?igsh=M2txMHRodXc5MTFz" target="_blank" class="fa-square-instagram fa-brands text-[#007429] text-4xl "></a>
+        <div class="px-5 flex items-center">
+            <div class="w-10 flex  justify-start">
+
+                <a href="https://www.instagram.com/padanggolfsukajadi?igsh=M2txMHRodXc5MTFz" target="_blank" class="fa-square-instagram fa-brands text-[#007429] text-3xl w-6 h-6 "></a>
+            </div>
             
-        </div>
-        <div class="py-3  px-5">
-            <p class="text-[#007429] text-xl font-bold ">Instagram</p>
-            <p class="">padanggolfsukajadi</p>
+            <div class="py-3  px-5">
+                <p class="text-[#007429]  font-bold text-sm ">Instagram</p>
+                <p class="text-xs">padanggolfsukajadi</p>
+            </div>
+
+            
         </div>
 
         <!-- facebook -->
-        <div class="py-3 ml-5">
-            <i class="fa-square-facebook fa-brands text-[#007429] text-4xl "></i>
-        </div>
-        <div class="py-3  px-5">
-            <p class="text-[#007429] text-xl font-bold ">Facebook</p>
-            <p class="">padanggolfsukajadi</p>
+        <div class="px-5 flex items-center">
+            <div class="w-10 flex  justify-start">
+
+                <i class="fa-square-facebook fa-brands text-[#007429] text-3xl w-6 h-6 "></i>
+            </div>
+            <div class="py-3  px-5">
+                <p class="text-[#007429]  font-bold text-sm ">Facebook</p>
+                <p class="text-xs">padanggolfsukajadi</p>
+            </div>
         </div>
         
         <!-- Email -->
-        <div class="py-3 ml-5">
-            <i class="fa-envelope fa-solid text-[#007429] text-3xl "></i>
-        </div>
-        <div class="py-3  px-5">
-            <p class="text-[#007429] text-xl font-bold ">Email</p>
-            <p class="">sales@padanggolfsukajadi.com</p>
+        <div class="px-5 flex items-center">
+            <div class=" w-10 flex  justify-center">
+                <i class="fa-envelope fa-solid text-[#007429] text-2xl  "></i>
+
+            </div>
+            <div class="py-3  px-5">
+                <p class="text-[#007429]  font-bold text-sm ">Email</p>
+                <p class="text-xs">sales@padanggolfsukajadi.com</p>
+            </div>
         </div>
         
         <!-- No HP -->
-        <div class="py-3 ml-5">
-            <i class="fa-phone fa-solid text-[#007429] text-3xl "></i>
-        </div>
-        <div class="py-3  px-5">
-            <p class="text-[#007429] text-xl font-bold ">Phone</p>
-            <p class="">+62 778 8073088</p>
+        <div class="px-5 flex items-center">
+            <div class="w-10 flex  justify-start">
+
+                <i class="fa-phone fa-solid text-[#007429] text-2xl "></i>
+            </div>
+            <div class="py-3  px-5">
+                <p class="text-[#007429]  font-bold text-sm ">Phone</p>
+                <p class="text-xs">+62 778 8073088</p>
+            </div>
         </div>
 
         <!-- Address -->
-        <div class="py-3 ml-5">
-            <i class="fa-location-dot fa-solid text-[#007429] text-3xl "></i>
-        </div>
-        <div class="py-3  px-5">
-            <p class="text-[#007429] text-xl font-bold ">Address</p>
-            <p class="">Jl. Jendral Sudirman, Club House Sukajadi Batam, 29432, Indonesia</p>
+        <div class="px-5 flex items-center ">
+            <div class="w-14 flex  justify-start">
+
+                <i class="fa-location-dot fa-solid text-[#007429] text-2xl "></i>
+            </div>
+            <div class="py-3  pl-5">
+                <p class="text-[#007429]  font-bold text-sm ">Address</p>
+                <p class="text-xs">Jl. Jendral Sudirman, Club House Sukajadi Batam, 29432, Indonesia</p>
+            </div>
         </div>
     </div>
 
     <!-- !FORM -->
-    <div class="py-4 ">
+    <div class="py-4 z-50">
         <span class="text-2xl font-bold text-center block mt-8">CONTACT US</span>
-        <form action="" class="my-5   px-10 ">
-            <div  class=" py-5 ">
+        <form action="" class="my-3   px-16 ">
+            <div  class=" py-2 ">
+
+                <!-- <label for="name" class="font-bold  text-[#007429]">NAME : </label> -->
+                <input type="text" class="border-b border-[#007429]
+                pb-2 placeholder:font-bold w-full placeholder:tracking-wider focus:outline-none focus:text-lg focus:font-semibold" placeholder="Name">
+            </div>
+            <div  class=" py-2">
 
                 <!-- <label for="name" class="font-bold text-xl text-[#007429]">NAME : </label> -->
-                <input type="text" class="border-b-2 border-[#007429]
-                placeholder:text-xl pb-5 placeholder:font-bold w-full placeholder:tracking-wider focus:outline-none focus:text-2xl focus:font-semibold" placeholder="Name">
+                <input type="email" class="border-b border-[#007429]
+                pb-2 placeholder:font-bold w-full placeholder:tracking-wider focus:outline-none focus:text-lg focus:font-semibold" placeholder="Email">
             </div>
-            <div  class=" py-5">
-
-                <!-- <label for="name" class="font-bold text-xl text-[#007429]">NAME : </label> -->
-                <input type="email" class="border-b-2 border-[#007429]
-                placeholder:text-xl pb-5 placeholder:font-bold w-full placeholder:tracking-wider focus:outline-none focus:text-2xl focus:font-semibold" placeholder="Email">
-            </div>
-            <div  class=" py-5">
+            <div  class=" py-2">
 
                 <!-- <label for="name" class="font-bold text-xl text-[#007429]">NAME : </label> -->
                 <textarea name="message" id="message" placeholder="Message"
-                class="border-b-2 border-[#007429]
-                placeholder:text-xl pb-5 placeholder:font-bold w-full placeholder:tracking-wider focus:outline-none focus:text-xl h-48"  ></textarea>
+                class="border-b border-[#007429]
+                pb-5 placeholder:font-bold w-full placeholder:tracking-wider focus:outline-none focus:text-lg h-32"  ></textarea>
             </div>
-            <button type="submit" class="bg-[#007429] text-white py-3 px-7 rounded-2xl text-xl font-bold tracking-wider ">Send</button>
+            <button type="submit" class="bg-[#007429] text-white py-1 px-5 rounded-2xl font-semibold tracking-wider ">Send</button>
             </form>
 
     </div>
@@ -318,7 +338,7 @@
             <!-- Gambar rumput (menimpa golf di bawah) -->
             <img src="assets/img/rumput.png"
                 alt="rumput"
-                class="w-full h-auto relative z-20">
+                class="w-full h-auto relative ">
 
         </div>
 
