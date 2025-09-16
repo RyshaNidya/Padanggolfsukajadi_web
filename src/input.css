@@ -5,13 +5,10 @@
 */
 
 @theme {
-    ----breakpoint-xs : 20rem;
+    ----breakpoint-xss : 20rem;
     
 }
 
-:root {
-    ----color-hijau : #007429;
-}
 
 .gambar-home {
     width: 155px;
