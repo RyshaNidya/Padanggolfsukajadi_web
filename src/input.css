@@ -5,31 +5,38 @@
 */
 
 @theme {
-    ----breakpoint-xss : 20rem;
-    
+  --breakpoint-xs: (max-width: 390px);
+  /* --breakpoint-mobile-landscape: (orientation: landscape) and (max-width: 950px) and (max-height: 450px); */
 }
-
 
 .gambar-home {
-    width: 155px;
-    height: 150px;
-    border-radius: 15px;
+  width: 155px;
+  height: 150px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.table-green-fees {
+  border-collapse: collapse;
+}
+
+.table-green-fees td,
+.table-green-fees tr {
+  border-bottom: 1px solid #88a492;
+  padding: 5px;
+}
+
+@media (max-width: 376px) {
+  .gambar-home {
+    width: 90%;
+    height: 200px;
     object-fit: cover;
-
-
+  }
 }
-
-@media (max-width: 370px){
-    .gambar-home {
-        width: 250px;
-        height: 200px;
-        object-fit: cover;
-    }
-}
-@media (min-width: 640px){
-    .gambar-home {
-        width: 300px;
-        height: 200px;
-        object-fit: cover;
-    }
+@media (min-width: 640px) {
+  .gambar-home {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
 }
