@@ -1,5 +1,9 @@
 @import "tailwindcss";
+@import "node_modules/flowbite/src/themes/default";
+@import 'flowbite';
+@plugin "flowbite/plugin";
 
+@source "../node_modules/flowbite";
 /* color
     green : 
 */
@@ -22,7 +26,7 @@
 
 .table-green-fees td,
 .table-green-fees tr {
-  border-bottom: 1px solid #88a492;
+  /* border-bottom: 1px solid #88a492; */
   padding: 5px;
 }
 

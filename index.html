@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
 </head>
 <body class="">
     <!-- ! HEADER & NAVBAR -->
-    <div class="h-screen  overflow-x-hidden bg-center bg-cover relative " style="background-image: url('../assets/img/bg-header.jpg');" >
+    <div class="h-screen  overflow-x-hidden bg-center bg-cover relative " style="background-image: url('../assets/img/bg-header.jpg');" id="home">
 
         <nav class="p-4 fixed w-screen z-50">
             
@@ -33,13 +33,48 @@
                 <img src="assets/img/logo_pgs.png" alt="Logo Padang Golf Sukajasi" class="w-12 sm:w-20 rounded-2xl
                 bg-slate-900 h-auto ml-5 ">
                 <span class="text-white font-bold m-5 text-sm sm:text-2xl ">PadangGolfSukajadi</span>
-                <i class="fa-bars fa-solid text-white mr-5 text-xl sm:text-3xl"></i>
+                <button data-collapse-toggle="navbar-default" type="button" class="fa-bars fa-solid text-white mr-5 text-xl sm:text-3xl"></button>
+
+                
+            </div>
+            <div class="hidden w-[70%] md:block md:w-auto ml-auto" id="navbar-default">
+                <ul class=" flex-col p-4 md:p-0 mt-4   rounded-lg bg-slate-900 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0   ">
+                    <li>
+                        <a href="#home" class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm   md:p-0 " aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#golf" class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm   md:p-0 " aria-current="page">Golf</a>
+                    </li>
+                    <li>
+                        <a href="#hotel" class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm   md:p-0 " aria-current="page">Hotel</a>
+                    </li>
+                    <li>
+                        <a href="#facilities" class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm   md:p-0 " aria-current="page">Facilities</a>
+                    </li>
+                    <li>
+                        <a href="#membership" class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm   md:p-0 " aria-current="page">Membership</a>
+                    </li>
+                
+                    <li>
+                        <a href="#greenfees" class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm   md:p-0 " aria-current="page">Green Fees</a>
+                    </li>
+                    <li>
+                        <a href="#clubs" class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm   md:p-0 " aria-current="page">Reciprocal & Affiliate</a>
+                    </li>
+                    <li>
+                        <a href="#location" class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm   md:p-0 " aria-current="page">Location</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm   md:p-0 " aria-current="page">Contact Us</a>
+                    </li>
+                
+                </ul>
             </div>
         </nav>
 
         <!--! Welcome text -->
 
-        <div class=" px-5 mb-2 text-white  absolute bottom-0 m-auto w-screen">
+        <div class=" px-5 mb-2 text-white  absolute bottom-0 m-auto w-screen" >
             <h1 class=" font-bold text-3xl sm:text-6xl  ">Welcome to Padang Golf Sukajadi</h1>
             <p class="mt-3 text-justify sm:text-3xl xss:text-sm">
                 At Padang Golf Sukajadi, we offer more than just a game, we provide an extraordinary golfing experience. Designed for golfers of all skill levels, our championship-level course is set amidst breathtaking landscapes, offering the perfect balance of challenge and relaxation.
@@ -70,18 +105,66 @@
             Padang Golf Sukajadi has been rated #2 in 2014 Batam course rating by Golf Digest Singapore. Padang Golf Sukajadi hosted the 1st Indonesia Golf Association Amateur Open Golf Championship in 2010, the 31st Indonesia Ladies Amateur Open Golf Championship in 2015 and 24th Indonesia Men Amateur Open Golf Championship in 2017.
         </p>
 
-        <!-- ! GAMBAR -->
-        <div class="flex justify-evenly gap-5 flex-wrap  ">
-            <img src="assets/img/radisson1.jpg" alt="" class="gambar-home shadow-lg  ">
-            <img src="assets/img/padanggolf1.jpg" alt="" class="gambar-home shadow-lg">
-            <img src="assets/img/pgs-image-1.jpg" alt="" class="gambar-home shadow-lg">
-            <img src="assets/img/pgs-image-1.jpg" alt="" class="gambar-home shadow-lg ">
+        <!-- ! GAMBAR Slider-->
+
+
+        
+
+        <div id="default-carousel" class="relative w-full" data-carousel="slide" >
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="assets/img/radisson1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="assets/img/padanggolf1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="assets/img/radisson1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="assets/img/pgs-image-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-cover" balt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="assets/img/radisson1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
         </div>
     </div>
 
     <!-- !GOLF -->
 
-    <div class="p-5">
+    <div class="p-5" id="golf" >
         <span class="text-2xl font-bold text-center block">GOLF</span>
 
         <div class=" flex mt-3 items-stretch gap-1 ">
@@ -109,7 +192,7 @@
     </div>
 
     <!-- !HOTEL -->
-    <div class="p-5">
+    <div class="p-5" id="hotel">
         <span class="text-2xl font-bold text-center block my-3">HOTEL</span>
         <span class="font-semibold block my-3">Radisson Golf & Convention Center Batam</span>
         
@@ -133,7 +216,7 @@
     </div>
 
     <!-- !FACILITIES -->
-    <div class="">
+    <div class="" id="facilities">
         <span class="text-2xl font-bold text-center block mt-5">FACILITIES</span>
 
         <!-- Driving Range -->
@@ -314,7 +397,7 @@
     </div>
 
     <!-- ! GREEN FEES -->
-        <span class="text-2xl font-bold text-center block mt-5 mb-3">GREEN FEES</span>
+        <span class="text-2xl font-bold text-center block mt-5 mb-3" id="greenfees">GREEN FEES</span>
 
         <div class="">
             
@@ -613,7 +696,7 @@
     <!-- ! RECIPROCAL AND AFFILIATED CLUBS -->
     
     <!-- reciprocal -->
-    <span class="text-xl font-bold text-center block mt-5 mb-3">Reciprocal and Affiliated Clubs</span>
+    <span class="text-xl font-bold text-center block mt-5 mb-3" id="clubs">Reciprocal and Affiliated Clubs</span>
     <span class="text-lg font-bold text-center block mt-5 mb-3">Our Reciprocal Clubs</span>
     
     <div class="flex flex-wrap justify-around items-center gap-3 img-affiliated p-5">
@@ -648,14 +731,14 @@
 
     <!-- ! LOCATION -->
 
-    <div>
+    <div id="location">
         <span class="text-2xl font-bold text-center block mt-5">LOCATION</span>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4898.17400328912!2d104.03340908974302!3d1.102569515234338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sid!2sid!4v1757385625616!5m2!1sid!2sid"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
         class="w-screen h-96 my-5"></iframe>
     </div>
 
     <!-- ! FIND US HERE -->
-    <span class="text-2xl font-bold text-center block mt-8">FIND US HERE</span>
+    <span class="text-2xl font-bold text-center block mt-8" id="contact">FIND US HERE</span>
 
     
     <div class="flex flex-col">
@@ -728,27 +811,22 @@
     <div class="py-4 z-50">
         <span class="text-2xl font-bold text-center block mt-8">CONTACT US</span>
         <form action="" class="my-3   px-16 ">
-            <div  class=" py-2 ">
-
-                <!-- <label for="name" class="font-bold  text-[#007429]">NAME : </label> -->
-                <input type="text" class="border-b border-[#007429]
-                pb-2 placeholder:font-bold w-full placeholder:tracking-wider focus:outline-none focus:text-lg focus:font-semibold" placeholder="Name">
+            
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="name" name="name" id="name" class="block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b border-[#007429] appearance-none focus:outline-none focus:ring-0  peer" placeholder=" " required />
+                <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-600  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
             </div>
-            <div  class=" py-2">
-
-                <!-- <label for="name" class="font-bold text-xl text-[#007429]">NAME : </label> -->
-                <input type="email" class="border-b border-[#007429]
-                pb-2 placeholder:font-bold w-full placeholder:tracking-wider focus:outline-none focus:text-lg focus:font-semibold" placeholder="Email">
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b border-[#007429] appearance-none 0 focus:outline-none focus:ring-0  peer" placeholder=" " required />
+                <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
             </div>
-            <div  class=" py-2">
-
-                <!-- <label for="name" class="font-bold text-xl text-[#007429]">NAME : </label> -->
-                <textarea name="message" id="message" placeholder="Message"
-                class="border-b border-[#007429]
-                pb-5 placeholder:font-bold w-full placeholder:tracking-wider focus:outline-none focus:text-lg h-32"  ></textarea>
+            <div class="relative z-0 w-full mb-5 group">
+                <textarea  name="message" id="message" cols="" class="block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b border-[#007429] appearance-none   focus:outline-none focus:ring-0  peer" placeholder="Message" ></textarea> 
+                
             </div>
-            <button type="submit" class="bg-[#007429] text-white py-1 px-5 rounded-2xl font-semibold tracking-wider ">Send</button>
-            </form>
+
+            <button type="button" class="bg-[#007429] text-white py-1 px-5 rounded-2xl font-semibold tracking-wider ">Send</button>
+        </form>
 
     </div>
     
@@ -798,5 +876,21 @@
         }
     });
     </script>
+    <script>
+        const navMenu = document.getElementById("navbar-default");
+        const navLinks = navMenu.querySelectorAll("a"); // semua link di dalam menu
+        const toggleButton = document.querySelector("[data-collapse-toggle='navbar-default']");
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", () => {
+            // Tutup menu kalau sedang terbuka (hanya di mobile)
+            if (!navMenu.classList.contains("hidden")) {
+                navMenu.classList.add("hidden");
+            }
+            });
+        });
+    </script>
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+
 </body>
 </html>
