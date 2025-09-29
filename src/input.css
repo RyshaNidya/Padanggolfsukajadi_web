@@ -1,6 +1,5 @@
 @import "tailwindcss";
-@import "node_modules/flowbite/src/themes/default";
-@import 'flowbite';
+@import "flowbite";
 @plugin "flowbite/plugin";
 
 @source "../node_modules/flowbite";
@@ -30,10 +29,9 @@
   padding: 5px;
 }
 
-.img-affiliated img{
+.img-affiliated img {
   width: 90px;
   height: auto;
-
 }
 
 @media (max-width: 376px) {
