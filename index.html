@@ -80,11 +80,11 @@
 
             <!-- ! BOOK NOW -->
             <div class="mt-5  flex ">
-                <a href="https://www.figma.com/design/zp0IYvVEDsC1eUzJ42hePA/UI-UX-Padang-Golf-Sukajadi?node-id=164-795&t=FepQzvY4m9NbV9vI-0" target="_blank" class="bg-white  py-3 px-5 rounded-full mr-1 inline-block w-[50%] text-center sm:py-5 ">
-                    <span class="text-slate-900 font-bold sm:text-2xl">Book Now</span>
+                <a href="https://www.figma.com/design/zp0IYvVEDsC1eUzJ42hePA/UI-UX-Padang-Golf-Sukajadi?node-id=164-795&t=FepQzvY4m9NbV9vI-0" target="_blank" class="bg-white  py-3 px-5 rounded-full mr-1 inline-block w-[50%] text-center sm:py-5 active:bg-slate-300 ">
+                    <span class="text-slate-900 font-bold sm:text-2xl active:text-white ">Book Now</span>
                 </a>
-                <a href="https://www.figma.com/design/zp0IYvVEDsC1eUzJ42hePA/UI-UX-Padang-Golf-Sukajadi?node-id=164-795&t=FepQzvY4m9NbV9vI-0" target="_blank" class="bg-white py-3 px-2  rounded-full inline-flex justify-center items-center">
-                    <i class=" fa-whatsapp fa-brands text-2xl  text-slate-900 sm:text-5xl  "></i>
+                <a href="https://www.figma.com/design/zp0IYvVEDsC1eUzJ42hePA/UI-UX-Padang-Golf-Sukajadi?node-id=164-795&t=FepQzvY4m9NbV9vI-0" target="_blank" class="bg-white py-3 px-2  rounded-full inline-flex justify-center items-center active:bg-slate-300">
+                    <i class=" fa-whatsapp fa-brands text-2xl  text-slate-900 sm:text-5xl active:text-white "></i>
                 </a>
             </div>
         </div>
@@ -271,20 +271,20 @@
       <div class="relative overflow-hidden">
         <div
           id="holeContent"
-          class="flex mt-3 items-stretch gap-3 transition-transform duration-500 ease-in-out"
+          class="flex mt-3 items-stretch gap-3 transition-all duration-600 ease-in"
         >
           <!--? hole (gambar) -->
-          <div class="w-1/4 flex justify-center items-center min-h-[120px]">
+          <div class="w-1/4 flex justify-center items-center h-80  golf-holes">
             <img
               id="holeImage"
               src="assets/img/hole/hole1.png"
               alt="Hole Golf"
-              class="w-16 object-contain"
+              class="w-full h-full object-contain"
             />
           </div>
 
           <!--? keterangan hole -->
-          <div class="h-full flex-1 flex flex-col justify-center min-h-[120px]">
+          <div class=" flex-1 flex flex-col justify-center h-full">
             <p id="holeTitle" class="text-xl font-semibold">Hole 1</p>
             <p id="holeDesc" class="text-sm my-5 text-justify">
               <span class="ml-5"></span>
@@ -293,9 +293,9 @@
               large tree in front of the tee box that requires golfers to make a
               precise opening shot.
             </p>
-            <a id="holeLink" href="https://www.youtube.com/" target="_blank">
+            <a id="holeLink" href="https://www.youtube.com/" target="_blank" >
               <button
-                class="bg-[#007429] py-2 px-4 rounded-lg text-white font-semibold"
+                class="bg-[#007429] py-2 px-4 rounded-lg text-white font-semibold hover:bg-white hover:text-[#007429] hover:border-[#007429] hover:border"
               >
                 Book Here
               </button>
@@ -306,20 +306,21 @@
 
       <div class="mt-2 text-center">
         <button
-          id="prevBtn"
-          class="text-[#007429] border-2 py-1 px-2 rounded-full"
+          id="prevBtn-golf"
+          class="text-[#007429] border-2 py-1 px-2 rounded-full hover:bg-[#007429] hover:text-white active:bg-[#007429] active:text-white"
         >
           <span class="fa-arrow-left fa-solid text-sm"></span>
         </button>
         <button
-          id="nextBtn"
-          class="bg-[#007429] border-2 py-1 px-2 text-white rounded-full"
+          id="nextBtn-golf"
+          class="bg-[#007429] border-2 py-1 px-2 text-white rounded-full hover:bg-white hover:text-[#007429] active:bg-white active:text-[#007429]"
         >
           <span class="fa-arrow-right fa-solid text-sm"></span>
         </button>
       </div>
     </div>
 
+    <!-- script golf holes button -->
     <script>
       // Data semua hole
       const holes = [
@@ -444,7 +445,7 @@
       function updateHole(index, direction) {
         // kasih animasi slide keluar
         holeContent.style.transform = `translateX(${
-          direction === "next" ? "-100%" : "100%"
+          direction === "next" ? "100%" : "-100%"
         })`;
         holeContent.style.opacity = "0";
 
@@ -457,7 +458,7 @@
 
           // reset ke sisi berlawanan sebelum slide masuk
           holeContent.style.transform = `translateX(${
-            direction === "next" ? "100%" : "-100%"
+            direction === "next" ? "-100%" : "100%"
           })`;
 
           setTimeout(() => {
@@ -467,12 +468,12 @@
         }, 300);
       }
 
-      document.getElementById("nextBtn").addEventListener("click", () => {
+      document.getElementById("nextBtn-golf").addEventListener("click", () => {
         currentIndex = (currentIndex + 1) % holes.length;
         updateHole(currentIndex, "next");
       });
 
-      document.getElementById("prevBtn").addEventListener("click", () => {
+      document.getElementById("prevBtn-golf").addEventListener("click", () => {
         currentIndex = (currentIndex - 1 + holes.length) % holes.length;
         updateHole(currentIndex, "prev");
       });

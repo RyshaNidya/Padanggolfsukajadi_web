@@ -34,6 +34,11 @@
   height: auto;
 }
 
+#holeImage {
+  
+  background-size: cover;
+}
+
 @media (max-width: 376px) {
   .gambar-home {
     width: 90%;
