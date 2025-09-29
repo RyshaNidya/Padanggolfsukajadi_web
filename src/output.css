@@ -1531,6 +1531,9 @@
   .max-h-full {
     max-height: 100%;
   }
+  .min-h-\[120px\] {
+    min-height: 120px;
+  }
   .datatable-table {
     .datatable-wrapper & {
       width: 100%;
@@ -1670,6 +1673,9 @@
   }
   .max-w-\[60\%\] {
     max-width: 60%;
+  }
+  .max-w-\[70\%\] {
+    max-width: 70%;
   }
   .datatable-input {
     .datatable-wrapper .datatable-search & {
@@ -2587,6 +2593,10 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .duration-500 {
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
+  }
   .duration-700 {
     --tw-duration: 700ms;
     transition-duration: 700ms;
@@ -2816,9 +2826,19 @@
       margin-top: calc(var(--spacing) * 0);
     }
   }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
+    }
+  }
   .md\:h-96 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 96);
+    }
+  }
+  .md\:w-auto {
+    @media (width >= 48rem) {
+      width: auto;
     }
   }
   .md\:flex-row {
