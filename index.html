@@ -555,9 +555,9 @@
     <!-- !HOTEL -->
     <div class="p-5" id="hotel">
       <span class="text-2xl font-bold text-center block my-3">HOTEL</span>
-      <span class="font-semibold block my-3"
-        >Radisson Golf & Convention Center Batam</span
-      >
+      <span class="font-semibold block my-3">
+        Radisson Golf & Convention Center Batam
+      </span>
 
       <!-- text picture hotel -->
       <div class="">
@@ -568,16 +568,21 @@
         </p>
 
         <img
-          src="assets/img/hotel1.png"
+          id="hotelImage"
+          src="assets/img/hotel/kamar1.jpg"
           alt="Hotel Padang Golf Sukajadi"
-          class="my-4 w-[80%] mx-auto rounded-xl shadow-lg object-cover"
+          class="my-4 mx-auto rounded-xl shadow-lg object-cover w-[600px] h-[400px]"
         />
 
-        <div class="mt-2 text-center">
-          <button class="text-[#007429] border-2 py-1 px-2 rounded-full">
+        <div class="mt-2 text-center flex justify-center gap-3">
+          <button
+            onclick="prevImage()"
+            class="text-[#007429] border-2 py-1 px-2 rounded-full"
+          >
             <span class="fa-arrow-left fa-solid text-sm"></span>
           </button>
           <button
+            onclick="nextImage()"
             class="bg-[#007429] border-2 py-1 px-2 text-white rounded-full"
           >
             <span class="fa-arrow-right fa-solid text-sm"></span>
@@ -585,6 +590,63 @@
         </div>
       </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // jika images sudah diset di window (mis. hot-reload), jangan timpa
+        if (typeof window.hotelImages === "undefined") {
+          window.hotelImages = [
+            "assets/img/hotel/kamar1.jpg",
+            "assets/img/hotel/kamar2.jpg",
+            "assets/img/hotel/kamar3.jpg",
+            "assets/img/hotel/kamar4.jpg",
+            "assets/img/hotel/kamar5.jpg",
+          ];
+        }
+
+        const images = window.hotelImages;
+
+        // jangan redeclare: pakai window.currentIndex supaya aman jika skrip dimuat ulang
+        if (typeof window.currentIndex === "undefined") {
+          window.currentIndex = 0;
+        }
+
+        const hotelImage = document.getElementById("hotelImage");
+        if (!hotelImage) {
+          console.error(
+            "Element #hotelImage tidak ditemukan. Pastikan id benar dan script dijalankan setelah DOM."
+          );
+          return;
+        }
+
+        function showImage(index) {
+          if (!images || images.length === 0) {
+            console.error("Array images kosong.");
+            return;
+          }
+          // safety: pastikan index valid
+          const i = ((index % images.length) + images.length) % images.length;
+          hotelImage.src = images[i];
+          hotelImage.alt = `Hotel image ${i + 1}`;
+          console.log("Menampilkan gambar:", i, images[i]);
+        }
+
+        // buat global supaya onclick inline bisa memanggilnya
+        window.nextImage = function () {
+          window.currentIndex = (window.currentIndex + 1) % images.length;
+          showImage(window.currentIndex);
+        };
+
+        window.prevImage = function () {
+          window.currentIndex =
+            (window.currentIndex - 1 + images.length) % images.length;
+          showImage(window.currentIndex);
+        };
+
+        // tampilkan initial image sesuai currentIndex
+        showImage(window.currentIndex);
+      });
+    </script>
 
     <!-- !FACILITIES -->
     <div class="" id="facilities">
