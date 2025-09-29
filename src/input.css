@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import "node_modules/flowbite/src/themes/default";
 @import 'flowbite';
 @plugin "flowbite/plugin";
 
