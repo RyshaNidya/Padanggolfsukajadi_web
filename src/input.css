@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import 'flowbite';
+@import "flowbite";
 @plugin "flowbite/plugin";
 
 @source "../node_modules/flowbite";
@@ -7,9 +7,13 @@
     green : 
 */
 
+/* @theme {
+  --breakpoint-xs: 390px;
+  --breakpoint-mobile-landscape: (orientation: landscape) and (max-width: 950px) and (max-height: 450px);
+} */
+
 @theme {
-  --breakpoint-xs: (max-width: 390px);
-  /* --breakpoint-mobile-landscape: (orientation: landscape) and (max-width: 950px) and (max-height: 450px); */
+  --breakpoint-max-md: (max-width: 767px);
 }
 
 .gambar-home {
@@ -29,16 +33,24 @@
   padding: 5px;
 }
 
-.img-affiliated img{
+.img-affiliated img {
   width: 90px;
   height: auto;
+}
 
+.gambar-facilities {
+  width: 150px;
+  height: auto;
 }
 
 #holeImage {
-  
   background-size: cover;
 }
+#holeContent {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+
 
 @media (max-width: 376px) {
   .gambar-home {
@@ -53,4 +65,40 @@
     height: 200px;
     object-fit: cover;
   }
+}
+
+@media (min-width: 768px) {
+  .gambar-facilities:nth-child(odd) {
+    width: 180px;
+    height: auto;
+  }
+
+  .gambar-facilities:nth-child(even) {
+    width: 180px;
+    height: auto;
+  }
+
+  .nama-web {
+    font-size: 1.3rem;
+    margin-left: 15px;
+  }
+
+  .logo-pgs:nth-child(odd) {
+    width: 4rem;
+  }
+
+  
+
+.img-affiliated img {
+  width: 110px;
+  height: auto;
+}
+
+  .find-us-here a {
+    font-size: 2rem;
+  }
+
+#facilities p {
+  font-size: medium;
+}
 }

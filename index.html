@@ -30,33 +30,36 @@
       <nav class="p-4 fixed w-screen z-50">
         <!-- ! NAVBAR -->
         <div
-          class="bg-slate-900 h-12 m-auto rounded-full flex items-center justify-between"
+          class="bg-slate-900 md:px-2  m-auto rounded-full flex items-center justify-between"
         >
-          <img
-            src="assets/img/logo_pgs.png"
-            alt="Logo Padang Golf Sukajasi"
-            class="w-12 sm:w-20 rounded-2xl bg-slate-900 h-auto ml-5"
-          />
-          <span class="text-white font-bold m-5 text-sm sm:text-2xl"
-            >PadangGolfSukajadi</span
+          <div
+            class="flex items-center justify-start transition-all duration-200 ease-in-out"
           >
+            <img
+              src="assets/img/logo_pgs.png"
+              alt="Logo Padang Golf Sukajasi"
+              class="w-12 rounded-2xl bg-slate-900 h-auto ml-1 logo-pgs"
+            />
+            <p class="font-semibold ml-2 text-sm text-white nama-web">
+              PadangGolfSukajadi
+            </p>
+          </div>
+
           <button
             data-collapse-toggle="navbar-default"
             type="button"
-            class="fa-bars fa-solid text-white mr-5 text-xl sm:text-3xl"
+            class="fa-bars fa-solid text-white mr-5 text-xl sm:text-3xl lg:!hidden md:!text-3xl"
           ></button>
         </div>
-        <div
-          class="hidden w-[70%] md:block md:w-auto ml-auto"
-          id="navbar-default"
-        >
+        <!-- list menu -->
+        <div class="hidden w-[70%] md:w-[45%] ml-auto" id="navbar-default">
           <ul
-            class="flex-col p-4 md:p-0 mt-4 rounded-lg bg-slate-900 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0"
+            class="flex-col p-4 md:p-4 mt-4 rounded-lg bg-slate-900 md:flex-row rtl:space-x-reverse md:mt-4"
           >
             <li>
               <a
                 href="#home"
-                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm md:p-0"
+                class="block text-white py-2 px-3 hover:bg-slate-700 rounded-sm"
                 aria-current="page"
                 >Home</a
               >
@@ -64,7 +67,7 @@
             <li>
               <a
                 href="#golf"
-                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm md:p-0"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
                 aria-current="page"
                 >Golf</a
               >
@@ -72,7 +75,7 @@
             <li>
               <a
                 href="#hotel"
-                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm md:p-0"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
                 aria-current="page"
                 >Hotel</a
               >
@@ -80,7 +83,7 @@
             <li>
               <a
                 href="#facilities"
-                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm md:p-0"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
                 aria-current="page"
                 >Facilities</a
               >
@@ -88,7 +91,7 @@
             <li>
               <a
                 href="#membership"
-                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm md:p-0"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
                 aria-current="page"
                 >Membership</a
               >
@@ -97,7 +100,7 @@
             <li>
               <a
                 href="#greenfees"
-                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm md:p-0"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
                 aria-current="page"
                 >Green Fees</a
               >
@@ -105,7 +108,7 @@
             <li>
               <a
                 href="#clubs"
-                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm md:p-0"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
                 aria-current="page"
                 >Reciprocal & Affiliate</a
               >
@@ -113,7 +116,7 @@
             <li>
               <a
                 href="#location"
-                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm md:p-0"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
                 aria-current="page"
                 >Location</a
               >
@@ -121,7 +124,7 @@
             <li>
               <a
                 href="#contact"
-                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm md:p-0"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
                 aria-current="page"
                 >Contact Us</a
               >
@@ -133,10 +136,10 @@
       <!--! Welcome text -->
 
       <div class="px-5 mb-2 text-white absolute bottom-0 m-auto w-screen">
-        <h1 class="font-bold text-3xl sm:text-6xl">
+        <h1 class="font-bold text-3xl md:text-4xl">
           Welcome to Padang Golf Sukajadi
         </h1>
-        <p class="mt-3 text-justify sm:text-3xl xss:text-sm">
+        <p class="mt-3 text-justify md:text-lg">
           At Padang Golf Sukajadi, we offer more than just a game, we provide an
           extraordinary golfing experience. Designed for golfers of all skill
           levels, our championship-level course is set amidst breathtaking
@@ -148,9 +151,9 @@
           <a
             href="https://www.figma.com/design/zp0IYvVEDsC1eUzJ42hePA/UI-UX-Padang-Golf-Sukajadi?node-id=164-795&t=FepQzvY4m9NbV9vI-0"
             target="_blank"
-            class="bg-white py-3 px-5 rounded-full mr-1 inline-block w-[50%] text-center sm:py-5"
+            class="bg-white py-3 px-5 rounded-full mr-1 inline-block w-[50%] md:w-[30%] text-center sm:py-5"
           >
-            <span class="text-slate-900 font-bold sm:text-2xl">Book Now</span>
+            <span class="text-slate-900 font-bold md:text-sm">Book Now</span>
           </a>
           <a
             href="https://www.figma.com/design/zp0IYvVEDsC1eUzJ42hePA/UI-UX-Padang-Golf-Sukajadi?node-id=164-795&t=FepQzvY4m9NbV9vI-0"
@@ -165,7 +168,7 @@
       </div>
     </div>
     <div class="p-5">
-      <p class="text-justify mb-5 sm:text-3xl sm:p-5 text-sm">
+      <p class="text-justify mb-5 sm:text-3xl sm:p-5 text-sm md:text-base">
         <!-- <span class=" font-semibold"><span class="mr-5"></span>We offer more than just a place to play—we provide a world-class golfing experience surrounded by breathtaking landscapes and championship-level fairways.</span><br><br>
             <span class="text-gray-600 ">Whether you're a seasoned golfer or just starting out, our premium facilities and expert services ensure an unforgettable game.</span> -->
         <span class="mr-5"></span>Padang Golf Sukajadi is a 18 hole championship
@@ -182,7 +185,7 @@
         >, a new build hotel with 240 rooms and suites. Located strategically in
         the heart of Batam city, offers golfers great accessibility. It takes 15
         minutes from Hang Nadim Batam international airport, 10 minutes from
-        Batam Center international ferry terminal and 10 minutes from downtown
+        Batam Center international ferry terminal and 10 minutes from dow ntown
         of Batam. <br /><br />
         The Par 72 Padang Golf Sukajadi measures 6,340 meters with four
         different tee locations (Black, Blue, White and Red tees) to suit
@@ -343,10 +346,7 @@
       <span class="text-2xl font-bold text-center block">GOLF</span>
 
       <div class="relative overflow-hidden">
-        <div
-          id="holeContent"
-          class="flex mt-3 items-stretch gap-3 transition-all duration-600 ease-in"
-        >
+        <div id="holeContent" class="flex mt-3 items-stretch gap-3">
           <!--? hole (gambar) -->
           <div class="w-1/4 flex justify-center items-center h-80 golf-holes">
             <img
@@ -360,7 +360,7 @@
           <!--? keterangan hole -->
           <div class="flex-1 flex flex-col justify-center h-full">
             <p id="holeTitle" class="text-xl font-semibold">Hole 1</p>
-            <p id="holeDesc" class="text-sm my-5 text-justify">
+            <p id="holeDesc" class="text-sm my-5 text-justify md:text-lg">
               <span class="ml-5"></span>
               Is a par 4 with a distance of 301–376 meters and a difficulty
               index of 14, featuring lateral water hazards on both sides and a
@@ -539,7 +539,7 @@
             holeContent.style.transform = "translateX(0)";
             holeContent.style.opacity = "1";
           }, 50);
-        }, 300);
+        }, 500);
       }
 
       document.getElementById("nextBtn-golf").addEventListener("click", () => {
@@ -556,13 +556,13 @@
     <!-- !HOTEL -->
     <div class="p-5" id="hotel">
       <span class="text-2xl font-bold text-center block my-3">HOTEL</span>
-      <span class="font-semibold block my-3">
+      <span class="font-semibold block my-3 md:text-lg">
         Radisson Golf & Convention Center Batam
       </span>
 
       <!-- text picture hotel -->
       <div class="">
-        <p class="text-sm text-justify">
+        <p class="text-sm text-justify ">
           Radisson Golf & Convention Center Batam is a modern upscale hotel with
           240 rooms, a grand ballroom, eight meeting rooms, dining and leisure
           facilities, located right next to Padang Golf Sukajadi.
@@ -572,7 +572,7 @@
           id="hotelImage"
           src="assets/img/hotel/kamar1.jpg"
           alt="Hotel Padang Golf Sukajadi"
-          class="my-4 mx-auto rounded-xl shadow-lg object-cover w-full h-52 "
+          class="my-4 mx-auto rounded-xl shadow-lg object-cover w-full h-52 md:h-96 transition-opacity duration-200 ease-in-out opacity-100"
         />
 
         <div class="mt-2 text-center flex justify-center gap-3">
@@ -594,7 +594,7 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // jika images sudah diset di window (mis. hot-reload), jangan timpa
+        // set gambar global sekali saja
         if (typeof window.hotelImages === "undefined") {
           window.hotelImages = [
             "assets/img/hotel/kamar1.jpg",
@@ -606,33 +606,39 @@
         }
 
         const images = window.hotelImages;
-
-        // jangan redeclare: pakai window.currentIndex supaya aman jika skrip dimuat ulang
         if (typeof window.currentIndex === "undefined") {
           window.currentIndex = 0;
         }
 
         const hotelImage = document.getElementById("hotelImage");
         if (!hotelImage) {
-          console.error(
-            "Element #hotelImage tidak ditemukan. Pastikan id benar dan script dijalankan setelah DOM."
-          );
+          console.error("#hotelImage tidak ditemukan");
           return;
         }
 
         function showImage(index) {
-          if (!images || images.length === 0) {
-            console.error("Array images kosong.");
-            return;
-          }
-          // safety: pastikan index valid
+          if (!images || images.length === 0) return;
+
           const i = ((index % images.length) + images.length) % images.length;
-          hotelImage.src = images[i];
-          hotelImage.alt = `Hotel image ${i + 1}`;
-          console.log("Menampilkan gambar:", i, images[i]);
+
+          // fade out
+          hotelImage.style.opacity = "0";
+
+          setTimeout(() => {
+            // ganti src
+            hotelImage.src = images[i];
+            hotelImage.alt = `Hotel image ${i + 1}`;
+          }, 200); // setengah durasi transisi
+
+          // fade in saat gambar baru selesai load
+          hotelImage.onload = () => {
+            setTimeout(() => {
+              hotelImage.style.opacity = "1";
+            }, 50);
+          };
         }
 
-        // buat global supaya onclick inline bisa memanggilnya
+        // tombol global
         window.nextImage = function () {
           window.currentIndex = (window.currentIndex + 1) % images.length;
           showImage(window.currentIndex);
@@ -644,7 +650,7 @@
           showImage(window.currentIndex);
         };
 
-        // tampilkan initial image sesuai currentIndex
+        // tampilkan gambar awal
         showImage(window.currentIndex);
       });
     </script>
@@ -655,21 +661,21 @@
 
       <!-- Driving Range -->
       <div class="flex mt-5 mb-10 items-center">
-        <div class="relative p-2 w-2/5">
+        <div class="relative p-2">
           <div
-            class="absolute px-5 py-3 border-8 border-white bg-[#007429] flex justify-center items-center text-2xl rounded-full left-3 top-0 text-white font-bold"
+            class="absolute px-3 py-1 border-6 border-white bg-[#007429] flex justify-center items-center text-2xl rounded-full left-3 md:left-5 top-0 text-white font-bold"
           >
             1
           </div>
           <img
             src="assets/img/faci_pic.png"
             alt="Driving Range"
-            class="object-cover w-full h-auto"
+            class="object-cover gambar-facilities"
           />
         </div>
-        <div class="pr-5 flex-1">
+        <div class="px-5 flex-1">
           <span class="font-semibold block text-xl">Driving Range</span>
-          <p class="text-justify mt-4">
+          <p class="text-justify mt-4 text-sm">
             The driving range features 24 bays and is located in the heart of
             Batam City, open daily from 07:00 to 22:00.
           </p>
@@ -680,43 +686,43 @@
       <div class="flex mt-5 mb-10 items-center">
         <div class="px-5 flex-1">
           <span class="font-semibold block text-xl">Restaurant</span>
-          <p class="text-justify mt-4">
+          <p class="text-justify mt-4 text-sm">
             Serving a wide selection of delicious meals, this venue welcomes
             both golfers and non-golfers for breakfast, lunch, or dinner, open
             daily from 06:00 to 20:00.
           </p>
         </div>
-        <div class="relative pr-5 w-2/5">
+        <div class="relative pr-5 md:h-auto flex justify-end">
           <div
-            class="absolute px-5 py-3 border-8 border-white bg-[#007429] flex justify-center items-center text-2xl rounded-full left-0 top-0 text-white font-bold"
+            class="absolute px-3 py-1 border-6 border-white bg-[#007429] flex justify-end items-center text-2xl rounded-full right-5 top-0 text-white font-bold"
           >
             2
           </div>
           <img
             src="assets/img/faci_retaurant.png"
             alt="Driving Range"
-            class="object-cover w-full h-auto"
+            class="object-cover gambar-facilities"
           />
         </div>
       </div>
 
       <!-- PROSHOP -->
       <div class="flex mt-5 mb-10 items-center">
-        <div class="relative p-2 w-2/5">
+        <div class="relative p-2">
           <div
-            class="absolute px-5 py-3 border-8 border-white bg-[#007429] flex justify-center items-center text-2xl rounded-full left-0 top-0 text-white font-bold"
+            class="absolute px-3 py-1 border-6 border-white bg-[#007429] flex justify-center items-center text-2xl rounded-full left-3 md:left-5 top-0 text-white font-bold"
           >
             3
           </div>
           <img
             src="assets/img/faci_proshop.png"
-            alt="Driving Range"
-            class="object-cover w-full h-auto"
+            alt="Pro Shop"
+            class="object-cover gambar-facilities"
           />
         </div>
-        <div class="pr-5 flex-1">
+        <div class="px-5 flex-1">
           <span class="font-semibold block text-xl">Pro Shop</span>
-          <p class="text-justify mt-4">
+          <p class="text-justify mt-4 text-sm">
             The Padang Golf Sukajadi Pro Shop provides a wide selection of golf
             apparel and equipment, open daily from 06:00 to 20:00.
           </p>
@@ -727,42 +733,42 @@
       <div class="flex mt-5 mb-10 items-center">
         <div class="px-5 flex-1">
           <span class="font-semibold block text-xl">Massage</span>
-          <p class="text-justify mt-4">
+          <p class="text-justify mt-4 text-sm">
             After a round of golf, unwind with a full sensory experience through
             traditional massage at our retreat, open daily from 09:00 to 18:00
           </p>
         </div>
-        <div class="relative pr-5 w-2/5">
+        <div class="relative pr-5 flex justify-end">
           <div
-            class="absolute px-5 py-3 border-8 border-white bg-[#007429] flex justify-center items-center text-2xl rounded-full left-0 top-0 text-white font-bold"
+            class="absolute px-3 py-1 border-6 border-white bg-[#007429] flex justify-center items-center text-2xl rounded-full right-5 top-0 text-white font-bold"
           >
             4
           </div>
           <img
             src="assets/img/faci_mass.png"
             alt="Driving Range"
-            class="object-cover w-full h-auto"
+            class="object-cover gambar-facilities"
           />
         </div>
       </div>
 
       <!-- Locker -->
       <div class="flex mt-5 mb-10 items-center">
-        <div class="relative p-2 w-2/5">
+        <div class="relative p-2 md:h-auto">
           <div
-            class="absolute px-5 py-3 border-8 border-white bg-[#007429] flex justify-center items-center text-2xl rounded-full left-0 top-0 text-white font-bold"
+            class="absolute px-3 py-1 border-6 border-white bg-[#007429] flex justify-center items-center text-2xl rounded-full left-3 md:left-5 top-0 text-white font-bold"
           >
             5
           </div>
           <img
             src="assets/img/faci_proshop.png"
             alt="Driving Range"
-            class="object-cover w-full h-auto"
+            class="object-cover gambar-facilities"
           />
         </div>
         <div class="pr-5 flex-1">
           <span class="font-semibold block text-xl">VVIP Locker Room</span>
-          <p class="text-justify mt-4">
+          <p class="text-justify mt-4 text-sm">
             The Padang Golf Sukajadi Pro Shop provides a wide selection of golf
             apparel and equipment, open daily from 06:00 to 20:00.
           </p>
@@ -773,21 +779,21 @@
       <div class="flex mt-5 mb-10 items-center">
         <div class="px-5 flex-1">
           <span class="font-semibold block text-xl">Massage</span>
-          <p class="text-justify mt-4">
+          <p class="text-justify mt-4 text-sm">
             After a round of golf, unwind with a full sensory experience through
             traditional massage at our retreat, open daily from 09:00 to 18:00
           </p>
         </div>
-        <div class="relative pr-5 w-2/5">
+        <div class="relative pr-5 md:h-auto flex justify-end">
           <div
-            class="absolute px-5 py-3 border-8 border-white bg-[#007429] flex justify-center items-center text-2xl rounded-full left-0 top-0 text-white font-bold"
+            class="absolute px-3 py-1 border-6 border-white bg-[#007429] flex justify-center items-center text-2xl rounded-full right-5 top-0 text-white font-bold"
           >
             6
           </div>
           <img
             src="assets/img/faci_mass.png"
             alt="Driving Range"
-            class="object-cover w-full h-auto"
+            class="object-cover gambar-facilities"
           />
         </div>
       </div>
@@ -1270,7 +1276,7 @@
       >FIND US HERE</span
     >
 
-    <div class="flex flex-col">
+    <div class="flex flex-col find-us-here">
       <!-- instagram -->
       <div class="px-5 flex items-center">
         <div class="w-10 flex justify-start">
@@ -1282,8 +1288,8 @@
         </div>
 
         <div class="py-3 px-5">
-          <p class="text-[#007429] font-bold text-sm">Instagram</p>
-          <p class="text-xs">padanggolfsukajadi</p>
+          <p class="text-[#007429] font-bold text-sm md:text-lg">Instagram</p>
+          <p class="text-xs md:text-sm">padanggolfsukajadi</p>
         </div>
       </div>
 
@@ -1297,8 +1303,8 @@
           ></a>
         </div>
         <div class="py-3 px-5">
-          <p class="text-[#007429] font-bold text-sm">Facebook</p>
-          <p class="text-xs">padanggolfsukajadi</p>
+          <p class="text-[#007429] font-bold text-sm md:text-lg">Facebook</p>
+          <p class="text-xs md:text-sm">padanggolfsukajadi</p>
         </div>
       </div>
 
@@ -1312,8 +1318,8 @@
           ></a>
         </div>
         <div class="py-3 px-5">
-          <p class="text-[#007429] font-bold text-sm">Email</p>
-          <p class="text-xs">sales@padanggolfsukajadi.com</p>
+          <p class="text-[#007429] font-bold text-sm md:text-lg">Email</p>
+          <p class="text-xs md:text-sm">sales@padanggolfsukajadi.com</p>
         </div>
       </div>
 
@@ -1327,8 +1333,8 @@
           ></a>
         </div>
         <div class="py-3 px-5">
-          <p class="text-[#007429] font-bold text-sm">Phone</p>
-          <p class="text-xs">+62 778 8073088</p>
+          <p class="text-[#007429] font-bold text-sm md:text-lg">Phone</p>
+          <p class="text-xs md:text-sm">+62 778 8073088</p>
         </div>
       </div>
 
@@ -1338,12 +1344,12 @@
           <a
             href="https://maps.app.goo.gl/QztyjUScvJr7KAKy7"
             target="_blank"
-            class="fa-location-dot fa-solid text-[#007429] text-2xl w-6 h-6"
+            class="fa-location-dot fa-solid text-[#007429] text-2xl w-7 h-6 mx-2"
           ></a>
         </div>
-        <div class="py-3 pl-5">
-          <p class="text-[#007429] font-bold text-sm">Address</p>
-          <p class="text-xs">
+        <div class="py-3 px-5">
+          <p class="text-[#007429] font-bold text-sm md:text-lg">Address</p>
+          <p class="text-xs md:text-sm">
             Jl. Jendral Sudirman, Club House Sukajadi Batam, 29432, Indonesia
           </p>
         </div>
@@ -1352,20 +1358,20 @@
 
     <!-- !FORM -->
     <div class="py-4 z-50">
-      <span class="text-2xl font-bold text-center block mt-8">CONTACT US</span>
-      <form action="" class="my-3 px-16">
+      <span class="text-2xl font-bold text-center block mt-8 ">CONTACT US</span>
+      <form action="" class="my-3 px-16 md:w-[70%] mx-auto">
         <div class="relative z-0 w-full mb-5 group">
           <input
             type="name"
             name="name"
             id="name"
-            class="block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b border-[#007429] appearance-none focus:outline-none focus:ring-0 peer"
+            class="block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b border-[#007429] appearance-none focus:outline-none focus:ring-0 peer "
             placeholder=" "
             required
           />
           <label
             for="floating_email"
-            class="peer-focus:font-medium absolute text-sm text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            class="peer-focus:font-medium absolute text-sm text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6  "
             >Name</label
           >
         </div>
@@ -1396,7 +1402,7 @@
 
         <button
           type="button"
-          class="bg-[#007429] text-white py-1 px-5 rounded-2xl font-semibold tracking-wider"
+          class="bg-[#007429] text-white py-1 px-5 rounded-lg font-semibold tracking-wider"
         >
           Send
         </button>
@@ -1410,7 +1416,7 @@
       <img
         src="assets/img/golf.png"
         alt="golf"
-        class="absolute bottom-0 right-0 max-w-[70%] h-auto object-contain z-0"
+        class="absolute bottom-0 right-0 max-w-[60%] h-auto object-contain z-0"
       />
 
       <!-- Konten utama (form) -->
