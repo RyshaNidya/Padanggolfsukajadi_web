@@ -79,12 +79,12 @@
   }
 
   .nama-web {
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
     margin-left: 15px;
   }
 
   .logo-pgs:nth-child(odd) {
-    width: 4rem;
+    width: 3.2rem;
   }
 
   
