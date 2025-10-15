@@ -50,8 +50,6 @@
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-
-
 @media (max-width: 376px) {
   .gambar-home {
     width: 90%;
@@ -68,7 +66,7 @@
 }
 
 @media (min-width: 768px) {
-  .gambar-facilities:nth-child(odd) {
+  /* .gambar-facilities:nth-child(odd) {
     width: 180px;
     height: auto;
   }
@@ -76,7 +74,7 @@
   .gambar-facilities:nth-child(even) {
     width: 180px;
     height: auto;
-  }
+  } */
 
   .nama-web {
     /* font-size: 1.3rem; */
@@ -87,18 +85,122 @@
     width: 3.2rem;
   }
 
-  
-
-.img-affiliated img {
-  width: 110px;
-  height: auto;
-}
+  .img-affiliated img {
+    width: 110px;
+    height: auto;
+  }
 
   .find-us-here a {
     font-size: 2rem;
   }
 
-#facilities p {
-  font-size: medium;
+  #facilities p {
+    font-size: medium;
+  }
 }
+
+@media (min-width: 1280px) {
+
+  .title-fac {
+    font-size: x-large;
+  }
+
+  .desc-fac {
+    font-size: 3rem;
+  }
+
+  .gambar-facilities {
+    width: 250px;
+    height: auto;
+  }
+  .nama-web {
+    font-size: 1.2rem;
+  }
+
+  /* #facilities *{
+    border: 1px red solid;
+  } */
 }
+
+@media (min-width: 1024px) {
+
+  .our-benefit ul li{
+    border-bottom: 1px #0d8436 solid;
+    padding: 7px;
+  }
+  #hotelImage{
+    width: 100%;
+    height: 400px;
+  }
+
+  .find-us-here * {
+    border: 1px red solid;
+  }
+
+  .find-us-here {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+  .find-us-here > * {
+    flex : 1 1 0;
+    border: 1px gray solid;
+  }
+
+  .img-affiliated img {
+    width: 150px;
+  }
+
+  #location iframe {
+    height: 33rem;
+  }
+
+  .membership-lg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 0.7rem;
+    justify-content: center;
+  
+  }
+
+
+  .membership-lg > * {
+    width: 20%;
+    min-width: 200px;
+    justify-content: flex-start; 
+    box-sizing: border-box;
+    margin: 0;
+    
+  }
+
+  .greenfees-lg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 0.75rem;
+    justify-content: start;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .greenfees-lg > * {
+    
+    flex: 1 1 0;
+    min-width: 20%;
+    justify-content: flex-start; 
+    
+    
+  }
+
+  .text-hotel span{
+    font-size: x-large;
+  }
+  .text-hotel p{
+    font-size: larger;
+  }
+}
+
+/* .greenfees-lg * {
+  border: 1px red solid;
+} */
