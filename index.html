@@ -206,10 +206,8 @@
       <!--! Welcome text -->
 
       <div class="px-5 mb-2 text-white absolute bottom-0 m-auto w-screen">
-        <h1 class="font-bold text-3xl md:text-4xl">
-          Welcome to Padang Golf Sukajadi
-        </h1>
-        <p class="mt-3 text-justify md:text-lg">
+        <h1 class="font-bold text-4xl">Welcome to Padang Golf Sukajadi</h1>
+        <p class="mt-3 text-justify md:text-lg lg:w-[50%] lg:!text-xl">
           At Padang Golf Sukajadi, we offer more than just a game, we provide an
           extraordinary golfing experience. Designed for golfers of all skill
           levels, our championship-level course is set amidst breathtaking
@@ -436,20 +434,20 @@
           </div>
 
           <!--? keterangan hole -->
-          <div class="flex-1 flex flex-col justify-center h-full">
+          <div class="flex-1 flex flex-col justify-center h-full lg:mx-20">
             <p id="holeTitle" class="text-xl font-semibold">Hole 1</p>
-            <p id="holeDesc" class="text-sm my-5 text-justify md:text-lg">
+            <p id="holeDesc" class="text-sm my-5 text-justify md:text-lg lg:mr-20">
               <span class="ml-5"></span>
               Is a par 4 with a distance of 301–376 meters and a difficulty
               index of 14, featuring lateral water hazards on both sides and a
               large tree in front of the tee box that requires golfers to make a
               precise opening shot.
             </p>
-            <a id="holeLink" href="https://www.youtube.com/" target="_blank">
+            <a id="holeLink" href="pages/golfs.html">
               <button
                 class="bg-[#007429] py-2 px-4 rounded-lg text-white font-semibold hover:bg-white hover:text-[#007429] hover:border-[#007429] hover:border"
               >
-                Book Here
+                See More Details
               </button>
             </a>
           </div>
@@ -636,9 +634,9 @@
       <span class="text-2xl font-bold text-center block my-3">HOTEL</span>
 
       <!-- text picture hotel -->
-      <div class="lg:flex lg:gap-2 lg:items-start ">
+      <div class="lg:flex lg:gap-2 lg:items-start">
         <div class="lg:flex-1 text-hotel">
-          <span class="font-semibold block my-3 md:text-lg ">
+          <span class="font-semibold block my-3 md:text-lg">
             Radisson Golf & Convention Center Batam
           </span>
           <p class="text-sm text-justify lg:pr-5">
@@ -653,7 +651,7 @@
             id="hotelImage"
             src="assets/img/hotel/kamar1.jpg"
             alt="Hotel Padang Golf Sukajadi"
-            class="my-4 mx-auto rounded-lg shadow-lg object-cover w-[80%] h-52 md:h-80 transition-opacity duration-200 ease-in-out opacity-100 "
+            class="my-4 mx-auto rounded-lg shadow-lg object-cover w-[80%] h-52 md:h-80 transition-opacity duration-200 ease-in-out opacity-100"
           />
 
           <div class="mt-2 text-center flex justify-center gap-3">
@@ -743,7 +741,7 @@
 
       <!-- Driving Range -->
       <div class="flex mt-5 mb-10 items-center">
-        <div class="relative p-2 ">
+        <div class="relative p-2">
           <div
             class="absolute px-3 py-1 border-6 border-white bg-[#007429] flex justify-center items-center text-2xl rounded-full left-3 md:left-5 top-0 text-white font-bold"
           >
@@ -752,12 +750,14 @@
           <img
             src="assets/img/faci_pic.png"
             alt="Driving Range"
-            class="object-cover gambar-facilities "
+            class="object-cover gambar-facilities"
           />
         </div>
-        <div class="px-5 flex-1 ">
-          <span class="font-semibold block text-xl title-fac">Driving Range</span>
-          <p class="text-justify mt-4 text-sm   desc-fac ">
+        <div class="px-5 flex-1">
+          <span class="font-semibold block text-xl title-fac"
+            >Driving Range</span
+          >
+          <p class="text-justify mt-4 text-sm desc-fac">
             The driving range features 24 bays and is located in the heart of
             Batam City, open daily from 07:00 to 22:00.
           </p>
@@ -768,7 +768,7 @@
       <div class="flex mt-5 mb-10 items-center">
         <div class="px-5 flex-1 xl:ml-[300px]">
           <span class="font-semibold block text-xl title-fac">Restaurant</span>
-          <p class="text-justify mt-4 text-sm    desc-fac ">
+          <p class="text-justify mt-4 text-sm desc-fac">
             Serving a wide selection of delicious meals, this venue welcomes
             both golfers and non-golfers for breakfast, lunch, or dinner, open
             daily from 06:00 to 20:00.
@@ -804,7 +804,7 @@
         </div>
         <div class="px-5 flex-1">
           <span class="font-semibold block text-xl title-fac">Pro Shop</span>
-          <p class="text-justify mt-4 text-sm   desc-fac ">
+          <p class="text-justify mt-4 text-sm desc-fac">
             The Padang Golf Sukajadi Pro Shop provides a wide selection of golf
             apparel and equipment, open daily from 06:00 to 20:00.
           </p>
@@ -815,7 +815,7 @@
       <div class="flex mt-5 mb-10 items-center">
         <div class="px-5 flex-1 xl:ml-[300px]">
           <span class="font-semibold block text-xl title-fac">Massage</span>
-          <p class="text-justify mt-4 text-sm   desc-fac ">
+          <p class="text-justify mt-4 text-sm desc-fac">
             After a round of golf, unwind with a full sensory experience through
             traditional massage at our retreat, open daily from 09:00 to 18:00
           </p>
@@ -849,8 +849,10 @@
           />
         </div>
         <div class="pr-5 flex-1">
-          <span class="font-semibold block text-xl title-fac">VVIP Locker Room</span>
-          <p class="text-justify mt-4 text-sm   desc-fac ">
+          <span class="font-semibold block text-xl title-fac"
+            >VVIP Locker Room</span
+          >
+          <p class="text-justify mt-4 text-sm desc-fac">
             The Padang Golf Sukajadi Pro Shop provides a wide selection of golf
             apparel and equipment, open daily from 06:00 to 20:00.
           </p>
@@ -861,7 +863,7 @@
       <div class="flex mt-5 mb-10 items-center">
         <div class="px-5 flex-1 xl:ml-[300px]">
           <span class="font-semibold block text-xl title-fac">Massage</span>
-          <p class="text-justify mt-4 text-sm   desc-fac ">
+          <p class="text-justify mt-4 text-sm desc-fac">
             After a round of golf, unwind with a full sensory experience through
             traditional massage at our retreat, open daily from 09:00 to 18:00
           </p>
@@ -882,93 +884,91 @@
     </div>
 
     <!--! OVERVIEW -->
-    <div id="membership">
-      <span class="text-2xl font-bold text-center block my-5"
+    <div id="membership" class="mb-20">
+      <span class="text-2xl font-bold text-center block my-5 lg:!text-2xl"
         >Membership Overview</span
       >
 
       <!-- card membership -->
-      
-        <div class=" flex flex-wrap membership-lg">
-          <div
-            class="flex flex-col shadow justify-center items-center border border-gray-200 w-[90%] mx-auto rounded-lg pb-5 pt-3 mb-3"
-          >
-            <p class="font-semibold text-base text-center">
-              Individual Membership
-            </p>
 
-            <div
-              class="flex w-full flex-wrap justify-around items-center text-center"
-            >
-              <div class="p-3">
-                <p class="text-[#007429] font-semibold">IDR 50,000,000</p>
-                <ul class="text-xs text-gray-500">
-                  <li>Life Time Membership</li>
-                </ul>
-              </div>
-              <div class="p-3">
-                <p class="text-[#007429] font-semibold">IDR 11,000,000</p>
-                <ul class="text-xs text-gray-500">
-                  <li>Term Membership (1 year)</li>
-                </ul>
-              </div>
+      <div class="flex flex-wrap membership-lg mb-20">
+        <div
+          class="flex flex-col shadow justify-center items-center border border-gray-200 w-[90%] mx-auto rounded-lg pb-5 pt-3 mb-3"
+        >
+          <p class="font-semibold text-base text-center lg:!text-xl">
+            Individual Membership
+          </p>
+
+          <div
+            class="flex w-full flex-wrap justify-around items-center text-center"
+          >
+            <div class="p-3">
+              <p class="text-[#007429] font-semibold lg:!text-lg">IDR 50,000,000</p>
+              <ul class="text-xs text-gray-500 lg:!text-sm">
+                <li>Life Time Membership</li>
+              </ul>
             </div>
-          </div>
-
-          <div
-            class="flex flex-col shadow justify-center items-center border border-gray-200 w-[90%] mx-auto rounded-lg pb-5 pt-3 mb-3"
-          >
-            <p class="font-semibold text-base text-center">
-              Corporate Membership
-            </p>
-
-            <div
-              class="flex w-full flex-wrap justify-around items-center text-center"
-            >
-              <div class="p-3">
-                <p class="text-[#007429] font-semibold">IDR 75,000,000</p>
-                <ul class="text-xs text-gray-500">
-                  <li>Life Time Membership - 2 nominees</li>
-                </ul>
-              </div>
-              <div class="p-3">
-                <p class="text-[#007429] font-semibold">IDR 100,000,000</p>
-                <ul class="text-xs text-gray-500">
-                  <li>Life Time Membership - 3 nominees</li>
-                </ul>
-              </div>
-              <div class="p-3">
-                <p class="text-[#007429] font-semibold">IDR 125,000,000</p>
-                <ul class="text-xs text-gray-500">
-                  <li>Life Time Membership - 4 nominees</li>
-                </ul>
-              </div>
-              <div class="p-3">
-                <p class="text-[#007429] font-semibold">IDR 18,000,000</p>
-                <ul class="text-xs text-gray-500">
-                  <li>Term Membership (1 year) - 2 nominees</li>
-                  <li>9 Holes</li>
-                </ul>
-              </div>
+            <div class="p-3">
+              <p class="text-[#007429] font-semibold lg:!text-lg">IDR 11,000,000</p>
+              <ul class="text-xs text-gray-500 lg:!text-sm">
+                <li>Term Membership (1 year)</li>
+              </ul>
             </div>
           </div>
         </div>
 
-      
+        <div
+          class="flex flex-col shadow justify-center items-center border border-gray-200 w-[90%] mx-auto rounded-lg pb-5 pt-3 mb-3"
+        >
+          <p class="font-semibold text-base text-center lg:!text-xl">
+            Corporate Membership
+          </p>
+
+          <div
+            class="flex w-full flex-wrap justify-around items-center text-center"
+          >
+            <div class="p-3">
+              <p class="text-[#007429] font-semibold lg:!text-lg">IDR 75,000,000</p>
+              <ul class="text-xs text-gray-500 lg:!text-sm">
+                <li>Life Time Membership - 2 nominees</li>
+              </ul>
+            </div>
+            <div class="p-3">
+              <p class="text-[#007429] font-semibold lg:!text-lg">IDR 100,000,000</p>
+              <ul class="text-xs text-gray-500 lg:!text-sm">
+                <li>Life Time Membership - 3 nominees</li>
+              </ul>
+            </div>
+            <div class="p-3">
+              <p class="text-[#007429] font-semibold lg:!text-lg">IDR 125,000,000</p>
+              <ul class="text-xs text-gray-500 lg:!text-sm">
+                <li>Life Time Membership - 4 nominees</li>
+              </ul>
+            </div>
+            <div class="p-3">
+              <p class="text-[#007429] font-semibold lg:!text-lg">IDR 18,000,000</p>
+              <ul class="text-xs text-gray-500 lg:!text-sm">
+                <li>Term Membership (1 year) - 2 nominees</li>
+                <li>9 Holes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!--! our benefit -->
-      <div class="bg-[#88A492] my-5 p-5 our-benefit">
+      <div class="bg-[#88A492] my-5 p-5 our-benefit ">
         <p class="font-semibold py-3 lg:text-center lg:text-xl">Our Benefits</p>
-        <ul class="list-disc pl-7 lg:pl-0 text-sm text-justify lg:!text-lg lg:!text-center lg:!list-none">
+        <ul
+          class="list-disc pl-7 lg:pl-0 text-sm text-justify lg:!text-lg lg:!text-center lg:!list-none"
+        >
           <li>Only caddie and buggy fee per round</li>
           <li>Member guest golfing fee rates</li>
           <li>
-            Member rate at reciprocal clubs and special rate at affiliated
-            clubs
+            Member rate at reciprocal clubs and special rate at affiliated clubs
           </li>
           <li>Member entry fee to club competition</li>
-          <li>
-            Special Room Rate at Radisson Golf & Convention Center Batam
-          </li>
+          <li>Special Room Rate at Radisson Golf & Convention Center Batam</li>
           <li>Special rate at Sukajadi Driving Range</li>
           <li>Golf Handicap management</li>
           <li>PGS e-newsletter on a regular basis</li>
@@ -983,7 +983,7 @@
     </div>
 
     <!-- ! GREEN FEES -->
-    <div id="greenfees">
+    <div id="greenfees" class="mb-20">
       <span class="text-2xl font-bold text-center block mt-5 mb-3"
         >GREEN FEES</span
       >
@@ -1280,7 +1280,7 @@
         >FIND US HERE</span
       >
 
-      <div class="flex flex-col find-us-here ">
+      <div class="flex flex-col find-us-here">
         <!-- instagram -->
         <div class="px-5 flex items-center lg:flex-col">
           <div class="w-10 flex justify-start">
@@ -1360,10 +1360,11 @@
         </div>
       </div>
     </div>
+
     <!-- !FORM -->
     <div class="py-4 z-50">
       <span class="text-2xl font-bold text-center block mt-8">CONTACT US</span>
-      <form action="" class="my-3 px-16 md:w-[70%] mx-auto">
+      <form action="" class="my-3 px-16 md:w-[70%] mx-auto lg:w-[50%]">
         <div class="relative z-0 w-full mb-5 group">
           <input
             type="name"
@@ -1415,22 +1416,14 @@
 
     <!-- !FOOTER -->
     <!-- cntact -->
-    <div class="relative w-screen bg-white brder">
-      <!-- Gambar golf (background kanan bawah) -->
+    <div class="relative w-screen bg-white">
       <img
         src="assets/img/golf.png"
         alt="golf"
-        class="absolute bottom-0 right-0 max-w-[60%] h-auto object-contain z-0"
+        class="absolute bottom-0 right-0 max-w-[30%] h-auto object-contain z-0"
       />
-
-      <!-- Konten utama (form) -->
-
       <!-- Gambar rumput (menimpa golf di bawah) -->
-      <img
-        src="assets/img/rumput.png"
-        alt="rumput"
-        class="w-full h-auto relative"
-      />
+      <img src="assets/img/rumput.png" alt="rumput" class="w-full relative" />
     </div>
 
     <!-- ! copyright -->
@@ -1439,81 +1432,7 @@
       <p>All Rights Reserved</p>
     </div>
 
-    <!-- navbar hover -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const navLinks = document.querySelectorAll("nav a[href^='#']");
-        const sections = document.querySelectorAll("div[id]");
-
-        function activateLink() {
-          let currentSection = null;
-          const buffer = window.innerHeight / 4; // supaya lebih sensitif deteksinya
-
-          sections.forEach((section) => {
-            const rect = section.getBoundingClientRect();
-            if (rect.top <= buffer && rect.bottom > buffer) {
-              currentSection = section.id;
-            }
-          });
-
-          navLinks.forEach((link) => {
-            link.classList.remove("font-bold", "bg-slate-600", "text-black");
-            if (
-              currentSection &&
-              link.getAttribute("href") === `#${currentSection}`
-            ) {
-              link.classList.add("font-bold", "bg-slate-600", "text-black");
-            }
-          });
-        }
-
-        window.addEventListener("scroll", activateLink);
-        activateLink(); // aktifkan pas halaman pertama kali dibuka
-
-        // Smooth scroll
-        navLinks.forEach((link) => {
-          link.addEventListener("click", (e) => {
-            e.preventDefault();
-            const target = document.querySelector(link.getAttribute("href"));
-            window.scrollTo({
-              top: target.offsetTop - 100, // biar ga ketutup navbar
-              behavior: "smooth",
-            });
-          });
-        });
-      });
-    </script>
-
-    <script>
-      // Simpan posisi scroll sebelum reload
-      window.addEventListener("beforeunload", () => {
-        localStorage.setItem("scrollPos", window.scrollY);
-      });
-
-      // Balikin posisi scroll setelah reload
-      window.addEventListener("load", () => {
-        const scrollPos = localStorage.getItem("scrollPos");
-        if (scrollPos) {
-          window.scrollTo(0, parseInt(scrollPos));
-        }
-      });
-    </script>
-    <script>
-      const navMenu = document.getElementById("navbar-default");
-      const navLinks = navMenu.querySelectorAll("a"); // semua link di dalam menu
-      const toggleButton = document.querySelector(
-        "[data-collapse-toggle='navbar-default']"
-      );
-
-      navLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          // Tutup menu kalau sedang terbuka (hanya di mobile)
-          if (!navMenu.classList.contains("hidden")) {
-            navMenu.classList.add("hidden");
-          }
-        });
-      });
-    </script>
+    <script src="js/main.js"></script>
     <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
   </body>
 </html>
