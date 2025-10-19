@@ -121,9 +121,9 @@
     height: 400px;
   }
 
-  .find-us-here * {
+  /* .find-us-here * {
     border: 1px red solid;
-  }
+  } */
 
   .find-us-here {
     flex-direction: row;
@@ -132,7 +132,6 @@
   }
   .find-us-here > * {
     flex: 1 1 0;
-    border: 1px gray solid;
   }
 
   .img-affiliated img {
