@@ -43,7 +43,7 @@ This project was built using the following technologies.
 
 You can see our progress with click link below : (Only open when our server on)
 
-[https://gbpp8vhl7.localto.net/](https://gbpp8vhl7.localto.net/)
+[padanggolfsukajadi.netlify.app/](https://padanggolfsukajadi.netlify.app/)
 
 
 <!-- GETTING STARTED -->
