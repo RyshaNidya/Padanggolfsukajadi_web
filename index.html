@@ -1389,7 +1389,9 @@
     <!-- !FORM -->
     <div class="py-4 z-50">
       <span class="text-2xl font-bold text-center block mt-8">CONTACT US</span>
-      <form action="" class="my-3 px-16 md:w-[70%] mx-auto lg:w-[50%]">
+      <form data-netlify="true" name="contact" method="POST" class="my-3 px-16 md:w-[70%] mx-auto lg:w-[50%]"  >
+        <!-- <input  name="bot-field" class="hidden"> -->
+        <input  name="contactUs" class="hidden">
         <div class="relative z-0 w-full mb-5 group">
           <input
             type="name"
@@ -1400,7 +1402,7 @@
             required
           />
           <label
-            for="floating_email"
+            for="name"
             class="peer-focus:font-medium absolute text-sm text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >Name</label
           >
@@ -1408,14 +1410,14 @@
         <div class="relative z-0 w-full mb-5 group">
           <input
             type="email"
-            name="floating_email"
-            id="floating_email"
+            name="email"
+            id="email"
             class="block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b border-[#007429] appearance-none 0 focus:outline-none focus:ring-0 peer"
             placeholder=" "
             required
           />
           <label
-            for="floating_email"
+            for="email"
             class="peer-focus:font-medium absolute text-sm text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >Email address</label
           >
@@ -1431,8 +1433,8 @@
         </div>
 
         <button
-          type="button"
-          class="bg-[#007429] text-white py-1 px-5 rounded-lg font-semibold tracking-wider"
+          type="submit"
+          class="bg-[#007429] text-white py-1 px-5 rounded-lg font-semibold tracking-wider hover:cursor-pointer hover:bg-white hover:text-[#007429] hover:border hover:border-[#007429]" 
         >
           Send
         </button>
@@ -1458,7 +1460,7 @@
     </div>
 
     <script src="js/main.js"></script>
-    <!-- <script src="/node_modules/flowbite/dist/flowbite.min.js"></script> -->
+    <!-- <script src="/js/flowbite/dist/flowbite.min.js"></script> -->
 
     <!-- flowbite -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
