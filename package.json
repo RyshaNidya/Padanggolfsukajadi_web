@@ -22,6 +22,7 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.13",
     "dotenv": "^17.2.3",
+    "flowbite": "^3.1.2",
     "nodemailer": "^7.0.10",
     "tailwindcss": "^4.1.13"
   }
