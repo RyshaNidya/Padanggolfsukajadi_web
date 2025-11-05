@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOLF | Padang Golf Sukajadi</title>
+
+    <!-- TAILWIND -->
+    <link rel="stylesheet" href="../src/output.css" />
+    <!--? V4 -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <!--? V3 -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha384-..."
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- ! HEADER & NAVBAR -->
+    <div
+      class="relative h-screen bg-center bg-cover"
+      id="home"
+      style="background-image: url('../assets/img/bg-header.jpg')"
+    >
+      <nav class="p-4 fixed w-full z-50">
+        <!-- ! NAVBAR -->
+        <div
+          class="bg-slate-900 md:px-2 m-auto rounded-full flex items-center justify-between"
+        >
+          <div
+            class="flex items-center justify-start transition-all duration-200 ease-in-out"
+          >
+            <img
+              src="../assets/img/logo_pgs.png"
+              alt="Logo Padang Golf Sukajasi"
+              class="w-12 rounded-2xl bg-slate-900 h-auto ml-1 logo-pgs"
+            />
+            <p
+              class="font-semibold ml-2 text-sm text-white nama-web xl:text-3xl"
+            >
+              PadangGolfSukajadi
+            </p>
+          </div>
+
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="fa-bars fa-solid text-white mr-5 text-xl lg:!hidden md:!text-2xl"
+          ></button>
+
+          <div class="hidden lg:block mr-3">
+            <ul class="flex space-x-1 lg:text-xs">
+              <li class="">
+                <a
+                  href="../index.html"
+                  class="text-white py-2 px-3 hover:bg-slate-600 rounded-sm active:bg-slate-600 relative z-[999]"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/golfs.html"
+                  class="text-white py-2 px-3 hover:bg-slate-700 rounded-sm"
+                  >Golf</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/hotel.html"
+                  class="text-white py-2 px-3 hover:bg-slate-700 rounded-sm"
+                  >Hotel</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/facilities.html"
+                  class="text-white py-2 px-3 hover:bg-slate-700 rounded-sm"
+                  >Facilities</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/membership.html"
+                  class="text-white py-2 px-3 hover:bg-slate-700 rounded-sm"
+                  >Membership</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/greenfees.html"
+                  class="text-white py-2 px-3 hover:bg-slate-700 rounded-sm"
+                  >Green Fees</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/clubs.html"
+                  class="text-white py-2 px-3 hover:bg-slate-700 rounded-sm"
+                  >Reciprocal & Affiliate</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/location.html"
+                  class="text-white py-2 px-3 hover:bg-slate-700 rounded-sm"
+                  >Location</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../pages/contact_us.html"
+                  class="text-white py-2 px-3 hover:bg-slate-700 rounded-sm"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- list menu -->
+        <div class="hidden w-[70%] md:w-[30%] ml-auto" id="navbar-default">
+          <ul
+            class="flex-col p-4 md:p-4 mt-4 rounded-lg bg-slate-900 md:flex-row rtl:space-x-reverse md:mt-4"
+          >
+            <li>
+              <a
+                href="../index.html"
+                class="block text-white py-2 px-3 hover:bg-slate-700 rounded-sm"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/golfs.html"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
+                aria-current="page"
+                >Golf</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/hotel.html"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
+                aria-current="page"
+                >Hotel</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/facilities.html"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
+                aria-current="page"
+                >Facilities</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/membership.html"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
+                aria-current="page"
+                >Membership</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="../pages/greenfees.html"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
+                aria-current="page"
+                >Green Fees</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/clubs.html"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
+                aria-current="page"
+                >Reciprocal & Affiliate</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/location.html"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
+                aria-current="page"
+                >Location</a
+              >
+            </li>
+            <li>
+              <a
+                href="../pages/contact_us.html"
+                class="block py-2 px-3 text-white hover:bg-slate-700 rounded-sm"
+                aria-current="page"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!--! Welcome text -->
+
+      <div class="px-5 mb-2 text-white absolute bottom-0 m-auto w-screen">
+        <h1 class="font-bold text-4xl">Welcome to Padang Golf Sukajadi</h1>
+        <p class="mt-3 text-justify md:text-lg lg:w-[50%] lg:!text-xl">
+          At Padang Golf Sukajadi, we offer more than just a game, we provide an
+          extraordinary golfing experience. Designed for golfers of all skill
+          levels, our championship-level course is set amidst breathtaking
+          landscapes, offering the perfect balance of challenge and relaxation.
+        </p>
+
+        <!-- ! BOOK NOW -->
+        <div class="mt-5 flex">
+          <a
+            href="https://www.figma.com/design/zp0IYvVEDsC1eUzJ42hePA/UI-UX-Padang-Golf-Sukajadi?node-id=164-795&t=FepQzvY4m9NbV9vI-0"
+            target="_blank"
+            class="bg-white py-3 px-5 rounded-full mr-1 inline-block w-[50%] md:w-[30%] text-center sm:py-5"
+          >
+            <span class="text-slate-900 font-bold md:text-sm">Book Now</span>
+          </a>
+          <a
+            href="https://www.figma.com/design/zp0IYvVEDsC1eUzJ42hePA/UI-UX-Padang-Golf-Sukajadi?node-id=164-795&t=FepQzvY4m9NbV9vI-0"
+            target="_blank"
+            class="bg-white py-3 px-2 rounded-full inline-flex justify-center items-center"
+          >
+            <i
+              class="fa-whatsapp fa-brands text-2xl text-slate-900 sm:text-5xl"
+            ></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- !contact us -->
+    <div>
+      <span class="text-2xl font-bold text-center block mt-20 lg:!text-3xl"
+        >OUR CONTACT</span
+      >
+
+      <div class="flex flex-col mt-5 find-us-here">
+        <!-- instagram -->
+        <div class="px-5 flex items-center lg:flex-col">
+          <div class="h-auto flex justify-start">
+            <a
+              href="https://www.instagram.com/padanggolfsukajadi?igsh=M2txMHRodXc5MTFz"
+              target="_blank"
+              class="fa-square-instagram fa-brands text-[#007429] text-3xl lg:!text-6xl"
+            ></a>
+          </div>
+
+          <div class="py-3 px-5 lg:!text-center">
+            <p class="text-[#007429] font-bold text-sm md:text-lg">Instagram</p>
+            <p class="text-xs md:text-sm">padanggolfsukajadi</p>
+          </div>
+        </div>
+
+        <!-- facebook -->
+        <div class="px-5 flex items-center lg:flex-col">
+          <div class="w-10 flex justify-start">
+            <a
+              href="https://www.facebook.com/padanggolfsukajadi"
+              target="_blank"
+              class="fa-square-facebook fa-brands text-[#007429] text-3xl lg:!text-6xl"
+            ></a>
+          </div>
+          <div class="py-3 px-5 lg:!text-center">
+            <p class="text-[#007429] font-bold text-sm md:text-lg">Facebook</p>
+            <p class="text-xs md:text-sm">padanggolfsukajadi</p>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="px-5 flex items-center lg:flex-col">
+          <div class="w-10 flex justify-center">
+            <a
+              href="mailto:sales@padanggolfsukajadi.com"
+              target="_blank"
+              class="fa-envelope fa-solid text-[#007429] text-2xl lg:!text-6xl"
+            ></a>
+          </div>
+          <div class="py-3 px-5 lg:!text-center">
+            <p class="text-[#007429] font-bold text-sm md:text-lg">Email</p>
+            <p class="text-xs md:text-sm">sales@padanggolfsukajadi.com</p>
+          </div>
+        </div>
+
+        <!-- No HP -->
+        <div class="px-5 flex items-center lg:flex-col">
+          <div class="w-10 flex justify-start">
+            <a
+              href="tel:+627788073088"
+              target="_blank"
+              class="fa-phone fa-solid text-[#007429] text-2xl lg:!text-6xl"
+            ></a>
+          </div>
+          <div class="py-3 px-5 lg:!text-center">
+            <p class="text-[#007429] font-bold text-sm md:text-lg">Phone</p>
+            <p class="text-xs md:text-sm">+62 778 8073088</p>
+          </div>
+        </div>
+
+        <!-- Address -->
+        <div class="px-5 flex items-center lg:flex-col">
+          <div class="w-10 flex justify-start">
+            <a
+              href="https://maps.app.goo.gl/QztyjUScvJr7KAKy7"
+              target="_blank"
+              class="fa-location-dot fa-solid text-[#007429] text-2xl lg:!text-6xl mx-2"
+            ></a>
+          </div>
+          <div class="py-3 px-5 lg:!text-center">
+            <p class="text-[#007429] font-bold text-sm md:text-lg">Address</p>
+            <p class="text-xs md:text-sm">
+              Jl. Jendral Sudirman, Club House Sukajadi Batam, 29432, Indonesia
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="py-4 z-50 flex flex-col lg:!flex-row justify-center items-center"
+      >
+        <form action="" class="my-3 px-16 w-full md:w-[70%] lg:!w-[50%] mb-5">
+          <span class="text-2xl font-bold text-center block mt-8"
+            >Feedback</span
+          >
+
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="name"
+              name="name"
+              id="name"
+              class="block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b border-[#007429] appearance-none focus:outline-none focus:ring-0 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="floating_email"
+              class="peer-focus:font-medium absolute text-sm text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Name</label
+            >
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="email"
+              name="floating_email"
+              id="floating_email"
+              class="block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b border-[#007429] appearance-none 0 focus:outline-none focus:ring-0 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="floating_email"
+              class="peer-focus:font-medium absolute text-sm text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Email address</label
+            >
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <textarea
+              name="message"
+              id="message"
+              cols=""
+              class="block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b border-[#007429] appearance-none focus:outline-none focus:ring-0 peer"
+              placeholder="Message"
+            ></textarea>
+          </div>
+
+          <button
+            type="button"
+            class="bg-[#007429] text-white py-1 px-5 rounded-lg font-semibold tracking-wider"
+          >
+            Send
+          </button>
+        </form>
+
+        <div class="text-sm lg:!text-base">
+          <p>For enquiries or reservations, please contact:</p>
+          <p class="italic underline">
+            <a href="mailto:sales@padanggolfsukajadi.com"
+              >sales@padanggolfsukajadi.com</a
+            >
+          </p>
+          <br />
+
+          <p>
+            Reservation hours: <br />
+            Monday - Saturday <br />
+            08.00hrs - 18.00hrs (Indonesian Time)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ! copyright -->
+    <div class="flex flex-col items-center text-xs bg-[#007429] p-3 text-white">
+      <p>Copyright &copy; 2025 Padang Golf Sukajadi</p>
+      <p>All Rights Reserved</p>
+    </div>
+
+    <!-- navbar hover -->
+    <script src="../js/main.js"></script>
+    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
