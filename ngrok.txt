@@ -1,3 +1,0 @@
-ngrok config add-authtoken 32V3L5D208PEst0MNBudttgGL8D_5AuaMWXaK4gxKj1hFap82
-
-ngrok http http://localhost:5500
