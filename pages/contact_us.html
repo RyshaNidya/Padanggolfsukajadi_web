@@ -12,6 +12,11 @@
     <!--? V3 -->
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
     <!-- FONTAWESOME -->
     <link
       rel="stylesheet"
@@ -324,14 +329,20 @@
       <div
         class="py-4 z-50 flex flex-col lg:!flex-row justify-center items-center"
       >
-        <form action="" class="my-3 px-16 w-full md:w-[70%] lg:!w-[50%] mb-5">
+        <form
+          data-netlify="true"
+          name="contact"
+          method="POST"
+          class="my-3 px-16 w-full md:w-[70%] lg:!w-[50%] mb-5"
+        >
           <span class="text-2xl font-bold text-center block mt-8"
             >Feedback</span
           >
+          <input name="contactUs" class="hidden" />
 
           <div class="relative z-0 w-full mb-5 group">
             <input
-              type="name"
+              type="text"
               name="name"
               id="name"
               class="block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b border-[#007429] appearance-none focus:outline-none focus:ring-0 peer"
@@ -347,14 +358,14 @@
           <div class="relative z-0 w-full mb-5 group">
             <input
               type="email"
-              name="floating_email"
-              id="floating_email"
+              name="email"
+              id="email"
               class="block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b border-[#007429] appearance-none 0 focus:outline-none focus:ring-0 peer"
               placeholder=" "
               required
             />
             <label
-              for="floating_email"
+              for="email"
               class="peer-focus:font-medium absolute text-sm text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >Email address</label
             >
@@ -365,13 +376,13 @@
               id="message"
               cols=""
               class="block py-2.5 px-0 w-full text-sm text-gray-800 bg-transparent border-0 border-b border-[#007429] appearance-none focus:outline-none focus:ring-0 peer"
-              placeholder="Message"
+              placeholder="Message" required
             ></textarea>
           </div>
 
           <button
-            type="button"
-            class="bg-[#007429] text-white py-1 px-5 rounded-lg font-semibold tracking-wider"
+            type="submit"
+            class="bg-[#007429] text-white py-1 px-5 rounded-lg font-semibold tracking-wider hover:cursor-pointer hover:bg-white hover:text-[#007429] hover:border hover:border-[#007429]"
           >
             Send
           </button>
@@ -403,6 +414,8 @@
 
     <!-- navbar hover -->
     <script src="../js/main.js"></script>
-    <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    <!-- <script src="/node_modules/flowbite/dist/flowbite.min.js"></script> -->
   </body>
 </html>
