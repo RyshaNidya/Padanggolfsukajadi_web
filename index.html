@@ -56,7 +56,7 @@
             class="fa-bars fa-solid text-white mr-5 text-xl lg:!hidden md:!text-2xl"
           ></button>
 
-          <div class="hidden lg:block mr-3">
+          <div class="hidden lg:block mr-3" id="navbar-besar">
             <ul class="flex space-x-1 lg:text-xs">
               <li class="">
                 <a
@@ -600,9 +600,7 @@
 
       function updateHole(index, direction) {
         // kasih animasi slide keluar
-        holeContent.style.transform = `translateX(${
-          direction === "next" ? "100%" : "-100%"
-        })`;
+        
         holeContent.style.opacity = "0";
 
         setTimeout(() => {
@@ -613,15 +611,15 @@
           holeLink.href = holes[index].link;
 
           // reset ke sisi berlawanan sebelum slide masuk
-          holeContent.style.transform = `translateX(${
-            direction === "next" ? "-100%" : "100%"
-          })`;
+          // holeContent.style.transform = `translateX(${
+          //   direction === "next" ? "-100%" : "100%"
+          // })`;
 
           setTimeout(() => {
             holeContent.style.transform = "translateX(0)";
             holeContent.style.opacity = "1";
           }, 50);
-        }, 500);
+        }, 200);
       }
 
       document.getElementById("nextBtn-golf").addEventListener("click", () => {
