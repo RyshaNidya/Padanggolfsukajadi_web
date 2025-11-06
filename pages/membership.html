@@ -244,49 +244,67 @@
     </div>
 
     <!-- !MEMBERSHIP -->
-    <div id="golf" class="p-5">
-      <span class="text-2xl font-bold text-center block mt-20 lg:!text-3xl"
+    <div id="membership" class="p-5">
+      <span class="text-2xl font-bold text-center block mt-5 lg:!text-3xl"
         >MEMBERSHIP OVERVIEW</span
       >
 
       <!-- ?table membership -->
-      <div class="relative overflow-x-auto mx-auto mt-5 border">
+      <div class="relative overflow-x-auto mx-auto mt-5">
         <table
-          class="w-[60%] text-sm text-left rtl:text-right text-gray-500 mx-auto"
+          class="lg:!w-[60%] w-full text-sm text-left rtl:text-right text-gray-500 mx-auto"
         >
           <thead class="text-xs text-white uppercase bg-[#007429]">
             <tr>
-              <th scope="col" class="px-6 py-3 rounded-s-lg">Description</th>
-              <th scope="col" class="px-6 py-3 rounded-e-lg">Price</th>
+              <th scope="col" class="px-6 py-3 rounded-tl-lg">Types</th>
+              <th scope="col" class="px-6 py-3">Price</th>
+              <th scope="col" class="px-6 py-3 rounded-tr-lg">Description</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="bg-white">
+            <tr class="bg-white border-r border-gray-300">
               <th
+                rowspan="2"
                 scope="row"
-                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                class="px-6 py-4 font-medium text-base text-gray-900 whitespace-nowrap border-b border-gray-300 border-l"
               >
                 Individual Membership
               </th>
-              <td class="px-6 py-4">1</td>
+              <td class="px-6 py-4 text-[#007429] font-semibold">
+                IDR 50,000,000
+              </td>
+              <td class="px-6 py-4">Life Time Membership</td>
             </tr>
-            <tr class="bg-white :bg-gray-800">
+            <tr class="bg-white border-b border-r border-gray-300">
+              <td class="px-6 py-4 text-[#007429] font-semibold">
+                IDR 50,000,000
+              </td>
+              <td class="px-6 py-4">Life Time Membership</td>
+            </tr>
+            <tr class="bg-white :bg-gray-800 border-r border-gray-300">
               <th
+                rowspan="4"
                 scope="row"
-                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+                class="px-6 py-4 font-medium text-base text-gray-900 whitespace-nowrap border-gray-300 border-b border-l"
               >
                 Corporate Membership
               </th>
-              <td class="px-6 py-4">1</td>
+              <td class="px-6 py-4">IDR 50,000,000</td>
+              <td class="px-6 py-4">Life Time Membership</td>
             </tr>
-            <tr class="bg-white :bg-gray-800">
-              <th
-                scope="row"
-                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap :text-white"
-              >
-                Magic Mouse 2
-              </th>
-              <td class="px-6 py-4">1</td>
+            <tr class="bg-white border-r border-gray-300">
+              <td class="px-6 py-4">IDR 50,000,000</td>
+              <td class="px-6 py-4">Life Time Membership</td>
+            </tr>
+            <tr class="bg-white border-r border-gray-300">
+              <td class="px-6 py-4">IDR 50,000,000</td>
+              <td class="px-6 py-4">Life Time Membership</td>
+            </tr>
+            <tr
+              class="bg-white border-b border-r border-gray-300 rounded-br-lg"
+            >
+              <td class="px-6 py-4">IDR 50,000,000</td>
+              <td class="px-6 py-4">Life Time Membership</td>
             </tr>
           </tbody>
           <!-- <tfoot>
@@ -297,10 +315,25 @@
           </tfoot> -->
         </table>
       </div>
+
+      <!-- benefit -->
+      <div class="p-5 ">
+        <span class="text-2xl font-bold text-center block my-5 lg:!text-3xl"
+          >BENEFITS</span
+        >
+
+        <ul class=" text-center font-semibold text-lg">
+          <li>Only caddie and buggy fee per round</li>
+          <li>Only caddie and buggy fee per round n fbffjkfjf</li>
+          <li>Only caddie and buggy fee per round</li>
+        </ul>
+      </div>
     </div>
 
     <!-- ! copyright -->
-    <div class="flex flex-col items-center text-xs bg-[#007429] p-3 text-white lg:flex-row lg:justify-center lg:gap-3 ">
+    <div
+      class="flex flex-col items-center text-xs bg-[#007429] p-3 text-white lg:flex-row lg:justify-center lg:gap-3"
+    >
       <p>Copyright &copy; 2025 Padang Golf Sukajadi</p>
       <span class="hidden md:block">|</span>
       <p>All Rights Reserved</p>
