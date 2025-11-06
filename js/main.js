@@ -48,6 +48,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const judulbyindex = {
     "HOME | Padang Golf Sukajadi" : 0,
     "GOLF | Padang Golf Sukajadi" : 1,
+    "HOTEL | Padang Golf Sukajadi" : 2,
+    "FACILITIES | Padang Golf Sukajadi" : 3,
+    "MEMBERSHIP | Padang Golf Sukajadi" : 4,
+    "GREEN FEES | Padang Golf Sukajadi" : 5,
+    "CLUBS | Padang Golf Sukajadi" : 6,
+    "LOCATION | Padang Golf Sukajadi" : 7,
+    "CONTACT US | Padang Golf Sukajadi" : 8,
   }
 
   // judul halaman sekarng
