@@ -2278,6 +2278,9 @@
   .w-96 {
     width: calc(var(--spacing) * 96);
   }
+  .w-100 {
+    width: calc(var(--spacing) * 100);
+  }
   .w-\[50\%\] {
     width: 50%;
   }
