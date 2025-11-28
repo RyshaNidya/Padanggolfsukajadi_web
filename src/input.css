@@ -15,7 +15,31 @@
 @theme {
   --breakpoint-max-md: (max-width: 767px);
 }
+@media (min-width: 768px) {
+  .nama-web {
+    /* font-size: 1.3rem; */
+    margin-left: 15px;
+  }
 
+  .logo-pgs:nth-child(odd) {
+    width: 3.2rem;
+  }
+
+  .img-affiliated img {
+    width: 110px;
+    height: auto;
+  }
+
+  .find-us-here a {
+    font-size: 2rem;
+  }
+
+  #facilities p {
+    font-size: medium;
+  }
+
+  
+}
 .gambar-home {
   width: 155px;
   height: 150px;
@@ -72,30 +96,6 @@
     width: 300px;
     height: 200px;
     object-fit: cover;
-  }
-}
-
-@media (min-width: 768px) {
-  .nama-web {
-    /* font-size: 1.3rem; */
-    margin-left: 15px;
-  }
-
-  .logo-pgs:nth-child(odd) {
-    width: 3.2rem;
-  }
-
-  .img-affiliated img {
-    width: 110px;
-    height: auto;
-  }
-
-  .find-us-here a {
-    font-size: 2rem;
-  }
-
-  #facilities p {
-    font-size: medium;
   }
 }
 
